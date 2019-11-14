@@ -1,0 +1,104 @@
+7:101  0:005  Found UEFI Acpi 2.0 RSDP at 9BB4D014
+7:101  0:000  Saving ACPI tables from RSDP 9BB4D014 to EFI\CLOVER\ACPI\origin ...
+7:101  0:000   9BB4D014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+7:107  0:005    (Xsdt: 9BB29188, Rsdt: 9BB290C4)
+7:107  0:000    9BB29188: 'XSDT', 'CB-01', Rev: 1, Len: 252 -> XSDT.aml
+7:112  0:005    9BB290C4: 'RSDT', 'CB-01', Rev: 1, Len: 144 -> RSDT.aml
+7:118  0:005    Tables in Xsdt: 27
+7:118  0:000    0. 9BB2B000: 'FACP', 'CB-01', Rev: 5, Len: 268
+7:118  0:000        (Dsdt: 9BAEC000, Facs: 9BA68000, XDsdt: 9BAEC000, XFacs: 0)
+7:118  0:000        9BAEC000: 'DSDT', 'CB-01', Rev: 2, Len: 242369
+7:127  0:009        9BA68000: 'FACS', Ver: 2, Len: 64
+7:127  0:000    1. 9BACD000: 'UEFI', 'CB-01', Rev: 1, Len: 566
+7:127  0:000    2. 9BB46000: 'SSDT', 'CB-01', Rev: 2, Len: 24322
+7:127  0:000    3. 9BB44000: 'SSDT', 'CB-01', Rev: 2, Len: 6986
+7:127  0:000    4. 9BB40000: 'SSDT', 'CB-01', Rev: 2, Len: 12742
+7:127  0:000    5. 9BB3F000: 'SSDT', 'CB-01', Rev: 2, Len: 1114
+7:127  0:000    6. 9BB3E000: 'SSDT', 'CB-01', Rev: 2, Len: 70
+7:127  0:000    7. 9BB3D000: 'TPM2', 'CB-01', Rev: 3, Len: 52
+7:127  0:000    8. 9BB3C000: 'MSDM', 'CB-01', Rev: 3, Len: 85
+7:127  0:000    9. 9BB3B000: 'LPIT', 'CB-01', Rev: 1, Len: 148
+7:127  0:000    10. 9BB3A000: 'WSMT', 'CB-01', Rev: 1, Len: 40
+7:127  0:000    11. 9BB39000: 'SSDT', 'CB-01', Rev: 2, Len: 2928
+7:127  0:000    12. 9BB37000: 'SSDT', 'CB-01', Rev: 2, Len: 5279
+7:127  0:000    13. 9BB36000: 'DBGP', 'CB-01', Rev: 1, Len: 52
+7:127  0:000    14. 9BB35000: 'DBG2', 'CB-01', Rev: 0, Len: 84
+7:127  0:000    15. 9BB33000: 'SSDT', 'CB-01', Rev: 2, Len: 4998
+7:127  0:000    16. 9BB2F000: 'SSDT', 'CB-01', Rev: 2, Len: 12565
+7:127  0:000    17. 9BB2D000: 'NHLT', 'CB-01', Rev: 0, Len: 6128
+7:127  0:000    18. 9BB2C000: 'ECDT', 'CB-01', Rev: 1, Len: 105
+7:127  0:000    19. 9BB2A000: 'HPET', 'CB-01', Rev: 1, Len: 56
+7:127  0:000    20. 9BB4C000: 'APIC', 'CB-01', Rev: 3, Len: 356
+7:127  0:000    21. 9BB28000: 'MCFG', 'CB-01', Rev: 1, Len: 60
+7:127  0:000    22. 9BAEB000: 'DMAR', 'EDK2', Rev: 1, Len: 168
+7:127  0:000    23. 9BAE9000: 'SSDT', 'NvdTable', Rev: 1, Len: 7896
+7:127  0:000    24. 9BAE8000: 'SSDT', 'PcdTabl', Rev: 1, Len: 356
+7:127  0:000    25. 9BAE7000: 'FPDT', 'CFL-ULT', Rev: 1, Len: 68
+7:127  0:000    26. 9BAE6000: 'BGRT', 'H2O BIOS', Rev: 1, Len: 56
+7:127  0:000    Tables in Rsdt: 27
+7:127  0:000    0. 9BB2B000: 'FACP', 'CB-01', Rev: 5, Len: 268
+7:127  0:000        (Dsdt: 9BAEC000, Facs: 9BA68000, XDsdt: 9BAEC000, XFacs: 0)
+7:127  0:000        9BAEC000: 'DSDT', 'CB-01', Rev: 2, Len: 242369
+7:136  0:009        9BA68000: 'FACS', Ver: 2, Len: 64
+7:136  0:000    1. 9BACD000: 'UEFI', 'CB-01', Rev: 1, Len: 566
+7:136  0:000    2. 9BB46000: 'SSDT', 'CB-01', Rev: 2, Len: 24322
+7:136  0:000    3. 9BB44000: 'SSDT', 'CB-01', Rev: 2, Len: 6986
+7:136  0:000    4. 9BB40000: 'SSDT', 'CB-01', Rev: 2, Len: 12742
+7:136  0:000    5. 9BB3F000: 'SSDT', 'CB-01', Rev: 2, Len: 1114
+7:136  0:000    6. 9BB3E000: 'SSDT', 'CB-01', Rev: 2, Len: 70
+7:136  0:000    7. 9BB3D000: 'TPM2', 'CB-01', Rev: 3, Len: 52
+7:136  0:000    8. 9BB3C000: 'MSDM', 'CB-01', Rev: 3, Len: 85
+7:136  0:000    9. 9BB3B000: 'LPIT', 'CB-01', Rev: 1, Len: 148
+7:136  0:000    10. 9BB3A000: 'WSMT', 'CB-01', Rev: 1, Len: 40
+7:136  0:000    11. 9BB39000: 'SSDT', 'CB-01', Rev: 2, Len: 2928
+7:136  0:000    12. 9BB37000: 'SSDT', 'CB-01', Rev: 2, Len: 5279
+7:136  0:000    13. 9BB36000: 'DBGP', 'CB-01', Rev: 1, Len: 52
+7:136  0:000    14. 9BB35000: 'DBG2', 'CB-01', Rev: 0, Len: 84
+7:136  0:000    15. 9BB33000: 'SSDT', 'CB-01', Rev: 2, Len: 4998
+7:136  0:000    16. 9BB2F000: 'SSDT', 'CB-01', Rev: 2, Len: 12565
+7:136  0:000    17. 9BB2D000: 'NHLT', 'CB-01', Rev: 0, Len: 6128
+7:136  0:000    18. 9BB2C000: 'ECDT', 'CB-01', Rev: 1, Len: 105
+7:136  0:000    19. 9BB2A000: 'HPET', 'CB-01', Rev: 1, Len: 56
+7:136  0:000    20. 9BB4C000: 'APIC', 'CB-01', Rev: 3, Len: 356
+7:136  0:000    21. 9BB28000: 'MCFG', 'CB-01', Rev: 1, Len: 60
+7:136  0:000    22. 9BAEB000: 'DMAR', 'EDK2', Rev: 1, Len: 168
+7:136  0:000    23. 9BAE9000: 'SSDT', 'NvdTable', Rev: 1, Len: 7896
+7:136  0:000    24. 9BAE8000: 'SSDT', 'PcdTabl', Rev: 1, Len: 356
+7:136  0:000    25. 9BAE7000: 'FPDT', 'CFL-ULT', Rev: 1, Len: 68
+7:136  0:000    26. 9BAE6000: 'BGRT', 'H2O BIOS', Rev: 1, Len: 56
+7:136  0:000  Found UEFI Acpi 1.0 RSDP at 9BB4D000
+7:136  0:000  Printing ACPI tables from RSDP 9BB4D000 ...
+7:136  0:000   9BB4D000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+7:136  0:000    (Rsdt: 9BB29000)
+7:136  0:000    9BB29000: 'RSDT', 'CB-01', Rev: 1, Len: 144
+7:136  0:000    Tables in Rsdt: 27
+7:136  0:000    0. 9BB2B000: 'FACP', 'CB-01', Rev: 5, Len: 268
+7:136  0:000        (Dsdt: 9BAEC000, Facs: 9BA68000, XDsdt: 9BAEC000, XFacs: 0)
+7:136  0:000        9BAEC000: 'DSDT', 'CB-01', Rev: 2, Len: 242369
+7:145  0:009        9BA68000: 'FACS', Ver: 2, Len: 64
+7:145  0:000    1. 9BACD000: 'UEFI', 'CB-01', Rev: 1, Len: 566
+7:145  0:000    2. 9BB46000: 'SSDT', 'CB-01', Rev: 2, Len: 24322
+7:145  0:000    3. 9BB44000: 'SSDT', 'CB-01', Rev: 2, Len: 6986
+7:145  0:000    4. 9BB40000: 'SSDT', 'CB-01', Rev: 2, Len: 12742
+7:145  0:000    5. 9BB3F000: 'SSDT', 'CB-01', Rev: 2, Len: 1114
+7:145  0:000    6. 9BB3E000: 'SSDT', 'CB-01', Rev: 2, Len: 70
+7:145  0:000    7. 9BB3D000: 'TPM2', 'CB-01', Rev: 3, Len: 52
+7:145  0:000    8. 9BB3C000: 'MSDM', 'CB-01', Rev: 3, Len: 85
+7:145  0:000    9. 9BB3B000: 'LPIT', 'CB-01', Rev: 1, Len: 148
+7:145  0:000    10. 9BB3A000: 'WSMT', 'CB-01', Rev: 1, Len: 40
+7:145  0:000    11. 9BB39000: 'SSDT', 'CB-01', Rev: 2, Len: 2928
+7:145  0:000    12. 9BB37000: 'SSDT', 'CB-01', Rev: 2, Len: 5279
+7:145  0:000    13. 9BB36000: 'DBGP', 'CB-01', Rev: 1, Len: 52
+7:145  0:000    14. 9BB35000: 'DBG2', 'CB-01', Rev: 0, Len: 84
+7:145  0:000    15. 9BB33000: 'SSDT', 'CB-01', Rev: 2, Len: 4998
+7:145  0:000    16. 9BB2F000: 'SSDT', 'CB-01', Rev: 2, Len: 12565
+7:145  0:000    17. 9BB2D000: 'NHLT', 'CB-01', Rev: 0, Len: 6128
+7:145  0:000    18. 9BB2C000: 'ECDT', 'CB-01', Rev: 1, Len: 105
+7:145  0:000    19. 9BB2A000: 'HPET', 'CB-01', Rev: 1, Len: 56
+7:145  0:000    20. 9BB4C000: 'APIC', 'CB-01', Rev: 3, Len: 356
+7:145  0:000    21. 9BB28000: 'MCFG', 'CB-01', Rev: 1, Len: 60
+7:145  0:000    22. 9BAEB000: 'DMAR', 'EDK2', Rev: 1, Len: 168
+7:145  0:000    23. 9BAE9000: 'SSDT', 'NvdTable', Rev: 1, Len: 7896
+7:145  0:000    24. 9BAE8000: 'SSDT', 'PcdTabl', Rev: 1, Len: 356
+7:145  0:000    25. 9BAE7000: 'FPDT', 'CFL-ULT', Rev: 1, Len: 68
+7:145  0:000    26. 9BAE6000: 'BGRT', 'H2O BIOS', Rev: 1, Len: 56
