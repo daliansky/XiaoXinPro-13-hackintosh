@@ -11,9 +11,10 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |显卡|Intel HD Graphics CFL CRB|
 |显示器|13.3 英寸 IPS 2560x1600|
 |声卡| Realtek ALC257|
-|网卡|更换为 Dell DW1820A|
+|网卡|更换为 [DW1820A](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)|
 
 ## 安装部分
+
 - 安装教程
     - 后续补上（目前还没整理），可以暂时参考小兵博客上小新air13的安装教程：[[**黑果小兵的部落阁**] : 联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
 - 镜像下载
@@ -41,4 +42,4 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 - 开启 [HIDPI](HIDPI) 来提升系统UI质量
 
 ## QQ群
-- 小新por 黑苹果    946132482
+- 小新pro黑苹果    946132482
