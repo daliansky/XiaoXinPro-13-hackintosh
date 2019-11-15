@@ -7,7 +7,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |操作系统|macOS Catalina 10.15 / macOS Mojave 10.14|
 |处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
-|硬盘|已更换为 三星 970evo|
+|硬盘|如果带的是981A，建议更换其它硬盘，这里我已经更换为 三星970evo|
 |显卡|Intel HD Graphics CFL CRB|（UHD620）
 |显示器|13.3 英寸 IPS 2560x1600|
 |声卡| Realtek ALC257|
