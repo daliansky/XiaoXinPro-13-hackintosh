@@ -8,7 +8,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
 |硬盘|已更换为 三星 970evo|
-|显卡|Intel HD Graphics CFL CRB|
+|显卡|Intel HD Graphics CFL CRB|（UHD620）
 |显示器|13.3 英寸 IPS 2560x1600|
 |声卡| Realtek ALC257|
 |网卡|更换为 [DW1820A](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)|
