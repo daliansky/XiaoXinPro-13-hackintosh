@@ -39,7 +39,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 - 触摸板
 - 睡眠
 ## 哪些可以工作更好
-- 开启 [HIDPI](HIDPI) 来提升系统UI质量
+- 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量
 
 ## QQ群
 - 小新pro黑苹果    946132482
