@@ -5,7 +5,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |:-: | :-:|
 |电脑型号|联想小新pro13 笔记本电脑|
 |操作系统|macOS Catalina 10.15 / macOS Mojave 10.14|
-|处理器|英特尔 酷睿 i5 - 10510U / i7-10710U|
+|处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
 |硬盘|已更换为 三星 970evo|
 |显卡|Intel HD Graphics CFL CRB|
