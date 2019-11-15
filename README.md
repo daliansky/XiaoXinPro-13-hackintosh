@@ -7,7 +7,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |操作系统|macOS Catalina 10.15 / macOS Mojave 10.14|
 |处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
-|硬盘|如果带的是981A，建议更换其它硬盘，这里我已经更换为 三星970evo|
+|硬盘|已更换为 三星 970evo|
 |显卡|Intel HD Graphics CFL CRB|（UHD620）
 |显示器|13.3 英寸 IPS 2560x1600|
 |声卡| Realtek ALC257|
@@ -23,7 +23,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
   - [Releases](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases)
 - 更新日志
 ## 注意
-- 目前该电脑只有CPU为I5的配置可以正常安装，CPU为I7的电脑无法正常安装，也希望有兴趣的朋友加入我们一起研究
+- 目前该电脑只有CPU为I5的配置可以正常安装，CPU为I7的电脑无法正常安装（clover卡加号+++++++ 暂时没有找到解决办法），也希望有兴趣的朋友加入我们一起研究
 - 该EFI目录中有CLOVER引导方式，也有OC的引导方式，目前两种方法都可以使用，但是OC引导方式，需要自己添加win系统的引导，具体方法：[添加引导](EFI/Document/OC-引导多系统@OC-xlivans.md)
 ## 正常工作
 - 显卡
