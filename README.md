@@ -30,7 +30,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 - 电源
 - 无线（已更换为DW1820A)
 - 蓝牙
-- 显示器亮度调节；亮度调节快捷键：f11/f12
+- 显示器亮度调节
 - USB定制（采用ACPI方式，为使用OC做准备）
 - 其它 ACPI 补丁修复采用 hotpatch 方式，文件位于 /CLOVER/ACPI/patched
 
