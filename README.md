@@ -14,7 +14,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |网卡|更换为 [DW1820A](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)|
 
 ## 已知问题
-  CPU为I7的电脑需要仿冒cpuid ：0x0806EC）即可正常安装 显卡暂无法驱动
+- CPU为I7的电脑需要仿冒cpuid ：0x0806EC）即可正常安装 显卡暂无法驱动
 - I5-10210U这个CPU中98%的机器可以正常安装黑苹果,而且只差声卡、触摸板、睡眠这些比较棘手的问题需要解决，正常使用已经没有问题，声音方面可以考虑使用外接蓝牙音箱暂时解决。但是有小部分机器安装好MAC系统替换该EFI会无限重启，目前这个还没找到解决办法，所以新购机的朋友可以先尝试安装，如果重启，可以考虑退换货在来尝试。
 
 ## 安装部分
