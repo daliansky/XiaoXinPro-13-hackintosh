@@ -15,7 +15,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 
 ## 已知问题
 - 部分`i5、i7`无法驱动，暂时没找到解决办法
-- CPU为`i7-10710U`的电脑需要仿冒cpuid ：`0x0806EC` 或 `0x0806EB`）即可正常安装并驱动集显;
+- CPU为`i7-10710U`的电脑需要仿冒cpuid ：`0x0806EC` 或 `0x0806EB`）即可正常安装并驱动集显, [可下载已仿冒CPUID](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases/tag/v1.2);
 - 目前 `声卡`、`触摸板`、`睡眠` 这些比较棘手的问题需要解决，正常使用已经没有问题，
 - 目前 `声卡 暂时使用万能驱动`，`手动选择Speaker` ，`不支持自动切换`；考虑使用外接蓝牙音箱暂时解决。
 
