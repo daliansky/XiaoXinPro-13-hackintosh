@@ -34,7 +34,8 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
     - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
 - EFI下载
   - [Releases](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases)
-- 更新日志
+- 更新日志  
+  - [Changelog](Changelog.md)
 ## 注意
      
 - 安装注意：`小新由于触摸板暂时不能驱动，使用U盘安装osx 会占用仅仅一个USB接口`,
