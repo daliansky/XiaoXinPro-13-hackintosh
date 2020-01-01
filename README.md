@@ -27,6 +27,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
     - 2.如果 `Secure Boot` 是 `Enabled`，选择左边到 `Security`： 设置 `Secure Boot` 为 `Disabled`;
     - 3.如果不需要 `独显`，选择左边到 `Configuration`： 设置 `Graphic Device` 为 `UMA Graphic`;
     - 4.如果不需要 `关机充电`(省电)，选择左边到 `Configuration`： 设置 `Always On USB` 为 `Disabled`;
+    - 5.`Fn+F10` 保存设置
 
     - <del>可以暂时参考小兵博客上小新air13的安装教程：[[**黑果小兵的部落阁**] : 联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)</del>
 - 镜像下载
