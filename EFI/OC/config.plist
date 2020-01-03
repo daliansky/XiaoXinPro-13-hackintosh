@@ -1209,7 +1209,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 brcmfx-country=#a</string>
+				<string>keepsyms=1 brcmfx-country=#a -v</string>
 				<key>csr-active-config</key>
 				<data>
 				5wMAAA==
