@@ -280,7 +280,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1 slide=0 -lilubetaall brcmfx-country=#a -alcbeta</string>
+		<string>dart=0 keepsyms=1 slide=0 -lilubetaall brcmfx-country=#a -alcbeta -v</string>
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
