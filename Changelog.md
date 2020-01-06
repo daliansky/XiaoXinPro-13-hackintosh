@@ -1,5 +1,11 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
-- 1-1-2020  
+- 01-06-2020  
+  #### CLOVER
+  - 添加对 `DW1820A` 注入 `pci-aspm-default`(请根据 `DW1820A` 的 `PCI`地址不同更改，请勿直接套搬，参考 [教程](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html) )
+  - `去掉`启动参数 `-alcbeta` (与 `AppleALC` 有关)
+  - 暂时`注释`声卡 `PCI` 注入(暂时使用万能声卡 `VoodooHDA` 驱动)
+
+- 01-01-2020  
   - `OC` 暂时不支持引导安装，只驱动集显；
   - `CLOVER` 可以安装引导 和 驱动集显；
   - `CLOVER`、`OC` 内置 `DW1820A` 蓝牙、Wi-Fi 驱动;

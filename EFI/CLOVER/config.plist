@@ -112,13 +112,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1EzOA==
-					</data>
+					<data>X1EzOA==</data>
 					<key>Replace</key>
-					<data>
-					WFEzOA==
-					</data>
+					<data>WFEzOA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -126,13 +122,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1EzOQ==
-					</data>
+					<data>X1EzOQ==</data>
 					<key>Replace</key>
-					<data>
-					WFEzOQ==
-					</data>
+					<data>WFEzOQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -140,13 +132,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X0JJRg==
-					</data>
+					<data>X0JJRg==</data>
 					<key>Replace</key>
-					<data>
-					WEJJRg==
-					</data>
+					<data>WEJJRg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -154,13 +142,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X0JTVA==
-					</data>
+					<data>X0JTVA==</data>
 					<key>Replace</key>
-					<data>
-					WEJTVA==
-					</data>
+					<data>WEJTVA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -168,13 +152,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					UE5MRg==
-					</data>
+					<data>UE5MRg==</data>
 					<key>Replace</key>
-					<data>
-					WE5MRg==
-					</data>
+					<data>WE5MRg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -182,13 +162,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1MxXw==
-					</data>
+					<data>X1MxXw==</data>
 					<key>Replace</key>
-					<data>
-					WFMxXw==
-					</data>
+					<data>WFMxXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -196,13 +172,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1MzXw==
-					</data>
+					<data>X1MzXw==</data>
 					<key>Replace</key>
-					<data>
-					WFMzXw==
-					</data>
+					<data>WFMzXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -210,13 +182,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1E1MA==
-					</data>
+					<data>X1E1MA==</data>
 					<key>Replace</key>
-					<data>
-					WFE1MA==
-					</data>
+					<data>WFE1MA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -224,13 +192,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1EwQw==
-					</data>
+					<data>X1EwQw==</data>
 					<key>Replace</key>
-					<data>
-					WFEwQw==
-					</data>
+					<data>WFEwQw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -238,13 +202,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1EwRA==
-					</data>
+					<data>X1EwRA==</data>
 					<key>Replace</key>
-					<data>
-					WFEwRA==
-					</data>
+					<data>WFEwRA==</data>
 				</dict>
 			</array>
 		</dict>
@@ -280,7 +240,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1 slide=0 -lilubetaall brcmfx-country=#a -alcbeta -v</string>
+		<string>dart=0 keepsyms=1 slide=0 -lilubetaall brcmfx-country=#a -v</string>
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
@@ -296,7 +256,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>3</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -324,102 +284,80 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
-			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>
-				AACbPg==
-				</data>
-				<key>device-id</key>
-				<data>
-				mz4AAA==
-				</data>
-				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>enable-lspcon-support</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
-				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,43A3</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<key>#PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
 				<integer>99</integer>
 			</dict>
+			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AACbPg==</data>
+				<key>device-id</key>
+				<data>mz4AAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				BAClPg==
-				</data>
+				<data>BAClPg==</data>
 				<key>device-id</key>
-				<data>
-				pT4AAA==
-				</data>
+				<data>pT4AAA==</data>
 				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-busid</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-has-lspcon</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-preferred-lspcon-mode</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AAAwAQ==</data>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
@@ -528,9 +466,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				D4KnAwAA
-				</data>
+				<data>D4KnAwAA</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -538,9 +474,7 @@
 				<key>Name</key>
 				<string>AppleIntelCFLGraphicsFramebuffer</string>
 				<key>Replace</key>
-				<data>
-				D4IAAAAA
-				</data>
+				<data>D4IAAAAA</data>
 			</dict>
 		</array>
 	</dict>
