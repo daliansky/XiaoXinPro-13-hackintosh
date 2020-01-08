@@ -1,6 +1,29 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
+- 01-08-2020
+  #### OC （宪武大佬更新）
+    - 删除VirtualSmc.efi以及config中列表;
+    - config新增-OSInfo;
+    - config新增-SignalAppleOS;
+    - config新增-SupportsCsm;
+    - config新增-WriteFlash;
+    - config新增2-AppleSmcIo;
+    - config新增2-AuthRestart;
+    - 更新DW1820A蓝牙、Wi-Fi驱动;
+    - 删除SSDT-Q0CQ0D-Energy.aml;
+    - SSDT-S1-S3-disable.aml撤回SSDT-S3-disable.aml;
+    - 删除CPUFriend.kext、CPUFriendDataProvider.kext;
+    - 添加NVMeFix.kext;
+    - 更新版本OpenCore.efi版本(https://github.com/n-d-k/OpenCorePkg);
+    - 删除RU.efi;
+    - 添加grubwithsetup_var.efi;
+    - 日常更新Lilu.kext、VirtualSMC.kext等驱动
+    - 删除modGRUBShell.efi
+    - config-i5.plist为i5机型使用;
+    - config-i7.plist为i7机型使用，与i5区别在于DVMT;
+    - config-识别i7.plist为i7机型使用，在config-i7.plist基础上补充完整信息，取消自动补充参数，识别i7（关于本机）
+
 - 01-06-2020  
-  #### CLOVER
+  #### CLOVER（小兵大佬更新）
   - 添加对 `DW1820A` 注入 `pci-aspm-default`(请根据 `DW1820A` 的 `PCI`地址不同更改，请勿直接套搬，参考 [教程](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html) )
   - `去掉`启动参数 `-alcbeta` (与 `AppleALC` 有关)
   - 暂时`注释`声卡 `PCI` 注入(暂时使用万能声卡 `VoodooHDA` 驱动)
