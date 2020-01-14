@@ -28,6 +28,20 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
     - 3.如果不需要 `独显`，选择左边到 `Configuration`： 设置 `Graphic Device` 为 `UMA Graphic`;
     - 4.如果不需要 `关机充电`(省电)，选择左边到 `Configuration`： 设置 `Always On USB` 为 `Disabled`;
     - 5.`Fn+F10` 保存设置
+- 安装后操作
+    - 安装好系统，先用 `安装的EFI` 进入系统
+    - 然后找到`终端`执行一下：
+    - `sudo spctl --master-disable`
+    - 再执行`重建缓存`: 
+    - `sudo kextcache -i /`
+    - 替换 `EFI` 或 `config.plist`
+    - 重启
+
+- OC 与 Clover之间切换：
+   - 例如Clover 转 OC
+   - 先设置OC启动
+   - 第一次重启，选择`reset nvram`，这时之前的启动设置会清除了
+   - 再次设置OC启动即可
 
     - <del>可以暂时参考小兵博客上小新air13的安装教程：[[**黑果小兵的部落阁**] : 联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)</del>
 - 镜像下载
