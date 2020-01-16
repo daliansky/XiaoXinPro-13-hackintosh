@@ -1,4 +1,11 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
+- 01-16-2020
+  #### Clover
+    - 去除-v；
+    - 修改因删除主题后开机显示白色背景+logo：改为开机显示为黑色+白色logo；
+    - 修改开机第一阶段logo大小；
+    - 显示【关于本机 - 内存 】
+
 - 01-08-2020
   #### OC （宪武大佬更新）
     - 删除VirtualSmc.efi以及config中列表;
