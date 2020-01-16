@@ -406,6 +406,7 @@
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
+			<string>Recovery</string>
 			<string>Windows</string>
 		</array>
 		<key>Mouse</key>
@@ -526,7 +527,7 @@
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x02</string>
+		<string>0x00</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>ProductName-Comment</key>
