@@ -1,4 +1,8 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
+- 01-29-2020
+  #### OC
+    - 更新OC；
+    - ALC声卡；
 - 01-16-2020
   #### Clover
     - 去除-v；
