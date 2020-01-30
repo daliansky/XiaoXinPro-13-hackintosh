@@ -28,12 +28,15 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 如果你的机子硬盘是三星固态硬盘(`三星PM981a`)，  
 为了更好使用 `macOS` ，强烈建议替换其他的，切勿在群里讨论，具体请百度 
 
-### 安装教程
+- ### 安装教程
+
     - `Fn+F2`进入`BIOS`,
     - 1.先查看 `Information`：`Secure Boot` 是否为 `Disabled`;
     - 2.如果 `Secure Boot` 是 `Enabled`，选择左边到 `Security`： 设置 `Secure Boot` 为 `Disabled`;
     - 5.`Fn+F10` 保存设置
-### 安装后操作
+
+- ### 安装后操作
+
     - 安装好系统，先用 `安装的EFI` 进入系统
     - 然后找到`终端`执行一下：
     - `sudo spctl --master-disable`
