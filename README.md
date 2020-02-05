@@ -76,7 +76,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 - 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/CLOVER/ACPI/patched`
 
 ## 不正常工作
-- ~~睡眠~~
+- ~~睡眠~~ (小新PRO13不能真正睡眠，可以仿真睡眠。唤醒比较困难，`OC` 下标准的唤醒方法是：按一下电源键，再按`Fn+Q`键
 - 触摸板
 - 声卡MIC
 
