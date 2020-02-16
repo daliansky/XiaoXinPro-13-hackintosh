@@ -28,30 +28,9 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 如果你的机子硬盘是三星固态硬盘(`三星PM981a`)，  
 为了更好使用 `macOS` ，强烈建议替换其他的，切勿在群里讨论，具体请百度 
 
-- ### 安装教程
-
-    - `Fn+F2`进入`BIOS`,
-    - 1.先查看 `Information`：`Secure Boot` 是否为 `Disabled`;
-    - 2.如果 `Secure Boot` 是 `Enabled`，选择左边到 `Security`： 设置 `Secure Boot` 为 `Disabled`;
-    - 5.`Fn+F10` 保存设置
-
-- ### 安装后操作
-
-    - 安装好系统，先用 `安装的EFI` 进入系统
-    - 然后找到`终端`执行一下：
-    - `sudo spctl --master-disable`
-    - 再执行`重建缓存`: 
-    - `sudo kextcache -i /`
-    - 替换 `EFI` 或 `config.plist`
-    - 重启
-
-- ### OC 与 Clover之间切换：
-   - 例如Clover 转 OC
-   - 先设置OC启动
-   - 第一次重启，选择`reset nvram`，这时之前的启动设置会清除了
-   - 再次设置对应的`EFI`启动即可
-
-    - <del>可以暂时参考小兵博客上小新air13的安装教程：[[**黑果小兵的部落阁**] : 联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)</del>
+- [联想小新PRO 13 2019兼macOS Catalina安装教程
+]：[[**黑果小兵的部落阁**] : 联想小新PRO 13 2019兼macOS Catalina安装教程
+](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)</del>
 - 镜像下载
     - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
 - EFI下载
