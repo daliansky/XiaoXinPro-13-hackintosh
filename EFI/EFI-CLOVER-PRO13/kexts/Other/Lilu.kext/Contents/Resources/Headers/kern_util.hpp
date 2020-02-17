@@ -73,10 +73,10 @@ extern proc_t kernproc;
  *  @param cond  precondition
  *  @param str   printf-like string
  */
-#define SYSLOG_COND(cond, module, str, ...)                                                                \
-	do {                                                                                                   \
-	    if (cond)                                                                                          \
-	        lilu_os_log( "%s%10s" str "\n", xStringify(PRODUCT_NAME) ": ", module " @ ", ## __VA_ARGS__);  \
+#define SYSLOG_COND(cond, module, str, ...)                                                                			  \
+	do {                                                                                                   			  \
+	    if (cond)                                                                                          			  \
+	        lilu_os_log( "%s%10s: @ " str "\n", xStringify(PRODUCT_NAME), safeString(module), ## __VA_ARGS__);		  \
 	} while (0)
 
 /**
@@ -94,12 +94,12 @@ extern proc_t kernproc;
  *  @param module log module
  *  @param str    printf-like string
  */
-#define SYSTRACE_COND(cond, module, str, ...)                                                                        \
-	do {                                                                                                             \
-	    if (cond) {                                                                                                  \
-	        SYSLOG(module, str, ## __VA_ARGS__);                                                                     \
-		    OSReportWithBacktrace( "%s%10s" str "\n", xStringify(PRODUCT_NAME) ": ", module " @ ", ## __VA_ARGS__);  \
-	    }                                                                                                            \
+#define SYSTRACE_COND(cond, module, str, ...)                                                                        			 \
+	do {                                                                                                             			 \
+	    if (cond) {                                                                                                  			 \
+	        SYSLOG(module, str, ## __VA_ARGS__);                                                                     			 \
+		    OSReportWithBacktrace( "%s%10s: @ " str "\n", xStringify(PRODUCT_NAME), safeString(module), ## __VA_ARGS__);			 \
+	    }                                                                                                            			 \
 	} while (0)
 
 /**
@@ -117,12 +117,12 @@ extern proc_t kernproc;
  *  @param module log module
  *  @param str    printf-like string
  */
-#define PANIC_COND(cond, module, str, ...)                                                             \
-	do {                                                                                               \
-	    if (cond) {                                                                                    \
-	        (panic)( "%s%10s" str "\n", xStringify(PRODUCT_NAME) ": ", module " @ ", ## __VA_ARGS__);  \
-	        UNREACHABLE();                                                                             \
-	    }                                                                                              \
+#define PANIC_COND(cond, module, str, ...)                                                             		\
+	do {                                                                                               		\
+	    if (cond) {                                                                                    		\
+	        (panic)( "%s%10s: @ " str "\n", xStringify(PRODUCT_NAME), safeString(module), ## __VA_ARGS__);  \
+	        UNREACHABLE();                                                                             		\
+	    }                                                                                              		\
 	} while (0)
 
 /**
@@ -508,6 +508,14 @@ inline T FunctionCast(T org, mach_vm_address_t ptr) {
 }
 
 /**
+ *  Reference cleaner
+ */
+template<class T> struct remove_reference      {typedef T type;};
+template<class T> struct remove_reference<T&>  {typedef T type;};
+template<class T> struct remove_reference<T&&> {typedef T type;};
+
+
+/**
  *  Typed buffer allocator
  */
 namespace Buffer {
@@ -703,14 +711,15 @@ struct ppair {
 
 /**
  *  Embedded vector-like container
- *  You muse call deinit before destruction
+ *  You must call deinit before destruction
  *  Ugh, someone, please, port libc++ to XNU...
  *
  *  @param T        held type
+ *  @param P        destructible type
  *  @param deleter  type destructor
  */
-template <typename T, void (*deleter)(T)=emptyDeleter<T>>
-class evector {
+template <typename T, typename P, void (*deleter)(P)=emptyDeleter<P>>
+class evector_base {
 	T *ptr {nullptr};
 	size_t cnt {0};
 	size_t rsvd {0};
@@ -842,9 +851,9 @@ public:
 		return false;
 	}
 
-	evector() = default;
-	evector(const evector &) = delete;
-	evector operator =(const evector &) = delete;
+	evector_base() = default;
+	evector_base(const evector_base &) = delete;
+	evector_base operator =(const evector_base &) = delete;
 
 	/**
 	 * Free the used memory
@@ -859,6 +868,16 @@ public:
 		}
 	}
 };
+
+/**
+*  Embedded vector-like container, simplified specialisation
+*  You must call deinit before destruction
+*
+*  @param T        held type
+*  @param deleter  type destructor
+*/
+template <typename T, void (*deleter)(T)=emptyDeleter<T>>
+class evector : public evector_base<typename remove_reference<T>::type, T, deleter> { };
 
 /**
  *  Slightly non-standard helpers to get the date in a YYYY-MM-DD format.
