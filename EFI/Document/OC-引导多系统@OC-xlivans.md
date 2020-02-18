@@ -42,9 +42,10 @@
 
   - 安装 **NOOPT** 或者 **DEBUG** 版本的 `OpenCore` （BOOTx64.ef 和 OpenCore.efi）。
   - 设置下列选项，提取日志文件：EFI根目录\opencore-YYYY-MM-DD-HHMMSS.txt。
-    -  `Misc\Debug\DisableWatchDog` = `true` 
-    -  `Misc\Debug\Target` = `65` 
-    -  `Misc\Security\ScanPolicy` = `0` 
+    - (亦可使用目录下 `EFI-OC-PRO13-AOAC-Debug` 版本引导，注意：该引导只做 debug 使用，日常使用请用 `EFI-OC-PRO13-AOAC`)
+    - `Misc\Debug\DisableWatchDog` = `true` 
+    - `Misc\Debug\Target` = `65` 
+    - `Misc\Security\ScanPolicy` = `0` 
   - 打开opencore-YYYY-MM-DD-HHMMSS.txt文件，搜索前文已经确认的启动分区的 `UUID` 。
   - 参考示例获得完整的 `path` 。
   
@@ -53,5 +54,3 @@
 #### 备注：
 
 Clover , Grub 等其他系统可以参照上述示例添加引导项目，达成以OC为主的多系统引导管理器。
-
-
