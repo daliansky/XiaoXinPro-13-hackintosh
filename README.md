@@ -82,7 +82,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 
 - 无线（原网卡在macOS 下只能使用蓝牙，建议更换为 [DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html))
 
-- 触摸板 `2-17-2020`
+- 触摸板 `2-17-2020` （`OC`关闭触摸板方法：`FN+F6` ）
 
   ![TouchPad](./screenshot/TouchPad.png)
 
@@ -93,7 +93,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 - 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/CLOVER/ACPI/patched`
 
 ## 不正常工作
-- ~~睡眠~~ (小新PRO13不能真正睡眠，可以仿真睡眠。唤醒比较困难，`OC` 下标准的唤醒方法是：按一下电源键，再按`Fn+Q`键
+- ~~睡眠~~ (小新PRO13不能真正睡眠，可以仿真睡眠。唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
 - 声卡MIC
 
 ## 哪些可以工作更好
