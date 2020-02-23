@@ -14,7 +14,6 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |网卡| 建议更换为 [DW1820A](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)|
 
 ## 已知问题
-- `部分机型无法驱动集显(但可安装进系统)，具体原因不明`
 - CPU为`i7-10710U`的需要仿冒cpuid ：`0x0806EC`、`0x0806EB` 或其他），才能正常安装并驱动集显, [已仿冒CPUID的EFI](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases);
 - 目前 `声卡MIC`、~~`睡眠`~~ 这些比较棘手的问题需要解决，正常使用已经没有问题。
 
