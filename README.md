@@ -27,6 +27,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 
 如果你的机子硬盘是三星固态硬盘(`三星PM981a`)，  
 为了更好使用 `macOS` ，强烈建议替换其他的，切勿在群里讨论，具体请百度 
+
 详细的安装教程请移步：[联想小新PRO 13 2019兼macOS Catalina安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html) 
 
 - ### 安装教程
