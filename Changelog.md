@@ -1,6 +1,6 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
 
-- 02-18-2020
+- 02-28-2020
   #### OC(@宪武大佬)
    - 更新OC，为下次更新OC声音(指OC的一个功能)准备；
    - 修复掉声卡问题；
