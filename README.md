@@ -94,7 +94,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 
 ## 不正常工作
 - ~~睡眠~~ (小新PRO13不能真正睡眠，可以仿真睡眠。唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
-- 声卡MIC
+- 声卡MIC(`暂时解决方法`：启动台-声音-输入：手动切换到“`外接可用麦克风设备`”)
 
 ## 哪些可以工作更好
 - 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
