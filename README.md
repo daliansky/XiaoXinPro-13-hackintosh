@@ -4,7 +4,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 |规格 | 详细信息|
 |:-: | :-:|
 |电脑型号|联想小新pro13 笔记本电脑|
-|操作系统|macOS Catalina 10.15.x / ~~macOS Mojave 10.14~~|
+|操作系统|macOS Catalina 10.15.x / ~~macOS Mojave 目前触摸板驱动不支持14.x~~|
 |处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
 |硬盘| 混搭,以下有说明 |
@@ -82,7 +82,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 
 - 无线（原网卡在macOS 下只能使用蓝牙，建议更换为 [DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html))
 
-- 触摸板 `2-17-2020` （1.`OC`关闭触摸板方法：`FN+F6`；2.`目前触摸板驱动不支持14.x` ）
+- 触摸板 `2-17-2020` （1.`OC`关闭触摸板方法：`FN+F6`2.`目前触摸板驱动不支持14.x` ）
 
   ![TouchPad](./screenshot/TouchPad.png)
 
