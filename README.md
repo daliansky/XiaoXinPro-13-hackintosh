@@ -82,7 +82,7 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 
 - 无线（原网卡在macOS 下只能使用蓝牙，建议更换为 [DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html))
 
-- 触摸板 `2-17-2020` （`OC`关闭触摸板方法：`FN+F6` ）
+- 触摸板 `2-17-2020` （1.`OC`关闭触摸板方法：`FN+F6`；2.`目前触摸板驱动不支持14.x` ）
 
   ![TouchPad](./screenshot/TouchPad.png)
 
