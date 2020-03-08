@@ -1,6 +1,15 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
 
+- 3-8-2020
+
+  - CLOVER 分支更新
+  - 声卡：新增`layout-id:100`，手动切换输入与输出节点，以解决无法驱动`Intel SST` DMIC内麦所带来的一系列问题
+  - 新增：`DVMT` for 10.15.4 patch
+
+  
+
 - 02-28-2020
+  
   #### OC(@宪武大佬)
    - 更新OC，为下次更新OC声音(指OC的一个功能)准备；
    - 修复掉声卡问题；
@@ -8,8 +17,8 @@
    - i5/i7合二为一；
    - USB供电(快充？需要手机设备支持)
    - Fn+Q 唤醒
-   - [具体详情](/EFI/EFI-OC-PRO13-AOAC/EFI-OC.md)
-
+ - [具体详情](/EFI/EFI-OC-PRO13-AOAC/EFI-OC.md)
+  
 - 02-18-2020
   #### OC(@宪武大佬)
     - 触摸板驱动(`02-17`)；
@@ -25,6 +34,7 @@
   #### OC
     - 更新OC；
     - ALC声卡；
+  
 - 01-16-2020
   #### Clover
     - 去除-v；
