@@ -1,6 +1,13 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
 
-- 3-8-2020
+- 3-11-2020(@宪武)
+
+  - OC 分支更新
+  - 更新OC版本；
+  - 更新DVMT支持15.4;
+  - 屏蔽*S键，Fn+C/P亮度调节，开机键亮屏
+
+- 3-8-2020(@daliansky)
 
   - CLOVER 分支更新
   - 声卡：新增`layout-id:100`，手动切换输入与输出节点，以解决无法驱动`Intel SST` DMIC内麦所带来的一系列问题
