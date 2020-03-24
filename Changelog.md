@@ -1,5 +1,21 @@
 ## XiaoXinPro-13-2019-hackintosh EFI Changelog
 
+- 3-24-2020  
+  Clover/OC （@宪武）
+  - 优化触控板驱动增加延迟、减少误触。使用`AOAC-PRW`全局更名（[详见OC-little](https://github.com/daliansky/OC-little/tree/master/01-关于AOAC/01-5-AOAC-PRW全局更名)）
+  - ### ACPI-Add下
+  - 更新`SSDT-OCI2C-TPXX-lenovoPRO13.aml`补丁
+  - 删除`SSDT-GPRW.aml`补丁
+
+  - ### ACPI-Patch下
+  - 删除`GPRW to XPRW` 替换成`_PRW to XPRW`: 
+  - `Find: 5F505257`
+  - `Replace: 58505257`
+
+- 3-18-2020  
+  - Clover/OC:
+  - 触摸板：优化三指和四肢
+
 - 3-11-2020(@宪武)
 
   - OC 分支更新

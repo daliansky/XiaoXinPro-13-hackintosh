@@ -136,14 +136,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPRW.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-GPRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -403,14 +395,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>GPRW to XPRW</string>
+				<string>_PRW to XPRW</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				R1BSVwI=
+				X1BSVw==
 				</data>
 				<key>Limit</key>
 				<integer>0</integer>
@@ -422,7 +414,7 @@
 				</data>
 				<key>Replace</key>
 				<data>
-				WFBSVwI=
+				WFBSVw==
 				</data>
 				<key>ReplaceMask</key>
 				<data>
