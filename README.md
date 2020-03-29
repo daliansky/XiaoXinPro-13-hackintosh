@@ -100,9 +100,9 @@ Lenovo XiaoXin Pro 13 2019 Hackintosh
 - 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
 
 ## QQ群
-- 小新pro黑苹果    946132482
-- 小新pro黑苹果技术群 673294583
-- 小新pro13 黑苹果 insyde bios研究群 635160015
+- 小新pro黑苹果    946132482  已满
+- 小新pro黑苹果技术群 673294583 未满
+- 小新pro13 黑苹果 insyde bios研究群 635160015  未满
 ### 为了更好地理解你遇到的问题，强烈建议：
 `先自行排错：重建缓存，重启`
 - 贴`小新pro13的硬件信息`(如鲁大师截图)
