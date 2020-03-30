@@ -1,4 +1,4 @@
-## XiaoXinPro-13-2019-hackintosh EFI Changelog
+## XiaoXinPro-13-hackintosh EFI Changelog
 
 - 3-24-2020  
   Clover/OC （@宪武）

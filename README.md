@@ -1,5 +1,6 @@
-# XiaoXinPro-13-2019-hackintosh
-Lenovo XiaoXin Pro 13 2019 Hackintosh
+# XiaoXinPro-13-hackintosh
+
+Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 ## 电脑配置
 |规格 | 详细信息|
 |:-: | :-:|
