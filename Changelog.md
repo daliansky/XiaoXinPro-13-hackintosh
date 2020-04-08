@@ -1,5 +1,14 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- 04-08-2020-OC(@宪武):
+  - `AppleXcpmCfgLock`、`AppleXcpmExtraMsrs`设置`false`
+  - 添加`VoodooInput.kext`驱动
+  - 移除`disable-external-gpu`属性
+  - 更新并重命名`SSDT-PCIWake-AOAC.aml`为`SSDT-PCI.LPCB-Wake-AOAC.aml`
+  - `SSDT-RMCF-Fn-disable.aml`重命名为`SSDT-RMCF-PS2Map-LenovoPRO13.aml`
+  - 更新`SSDT-RTC_Y-AWAC_N.aml`
+  - 更新：`OC(0.5.8)`、`kexts`驱动日常更新
+
 - 3-24-2020  
   Clover/OC （@宪武）
   - 优化触控板驱动增加延迟、减少误触。使用`AOAC-PRW`全局更名（[详见OC-little](https://github.com/daliansky/OC-little/tree/master/01-关于AOAC/01-5-AOAC-PRW全局更名)）
