@@ -152,19 +152,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-RMCF-Fn-disable.aml</string>
+				<string>SSDT-RMCF-PS2Map-LenovoPRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-RMCF-Fn-disable.aml</string>
+				<string>SSDT-RMCF-PS2Map-LenovoPRO13.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PCIWake-AOAC.aml</string>
+				<string>SSDT-PCI.LPCB-Wake-AOAC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PCIWake-AOAC.aml</string>
+				<string>SSDT-PCI.LPCB-Wake-AOAC.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -481,17 +481,21 @@
 			<true/>
 			<key>ForceExitBootServices</key>
 			<false/>
-			<key>ProtectCsmRegion</key>
+			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
 			<false/>
+			<key>ProtectUefiServices</key>
+			<false/>
 			<key>ProvideCustomSlide</key>
+			<false/>
+			<key>RebuildAppleMemoryMap</key>
 			<false/>
 			<key>SetupVirtualMap</key>
 			<true/>
-			<key>ShrinkMemoryMap</key>
-			<false/>
 			<key>SignalAppleOS</key>
+			<false/>
+			<key>SyncRuntimePermissions</key>
 			<false/>
 		</dict>
 	</dict>
@@ -519,10 +523,6 @@
 				<key>device-id</key>
 				<data>
 				mz4AAA==
-				</data>
-				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
 				</data>
 				<key>dpcd-max-link-rate</key>
 				<data>
@@ -775,6 +775,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>VoodooInput.kext</string>
+				<key>Comment</key>
+				<string>VoodooInput</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>VoodooI2C.kext</string>
 				<key>Comment</key>
 				<string>I2C</string>
@@ -1005,9 +1021,9 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
@@ -1038,6 +1054,8 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>ConsoleAttributes</key>
+			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
@@ -1096,7 +1114,7 @@
 			<key>##ScanPolicy</key>
 			<integer>0</integer>
 			<key>AllowNvramReset</key>
-			<true/>
+			<false/>
 			<key>AllowSetDefault</key>
 			<false/>
 			<key>AuthRestart</key>
@@ -1122,9 +1140,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
-				<string>Shell.efi</string>
+				<string>UEFI Shell</string>
 				<key>Path</key>
-				<string>Shell.efi</string>
+				<string>OpenShell.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>1</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>CleanNvram</string>
+				<key>Path</key>
+				<string>CleanNvram.efi</string>
 			</dict>
 		</array>
 	</dict>
@@ -1150,7 +1182,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>keepsyms=1</string>
+				<string>keepsyms=1 -v</string>
 				<key>csr-active-config</key>
 				<data>
 				5wMAAA==
@@ -1195,18 +1227,19 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>M0000000000000001</string>
 			<key>ROM</key>
 			<data>
+			ESIzRFVm
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>W00000000001</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>00000000-0000-0000-0000-000000000000</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1242,8 +1275,13 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
-			<string>FwRuntimeServices.efi</string>
+			<string>OpenRuntime.efi</string>
+			<string>#OpenUsbKbDxe.efi</string>
+			<string>#HiiDatabase.efi</string>
+			<string>#NvmExpressDxe.efi</string>
+			<string>#XhciDxe.efi</string>
 			<string>#AudioDxe.efi</string>
+			<string>#OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>

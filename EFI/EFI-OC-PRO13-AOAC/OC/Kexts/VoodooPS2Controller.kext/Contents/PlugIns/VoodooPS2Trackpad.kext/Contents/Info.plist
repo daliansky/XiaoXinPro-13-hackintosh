@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19E234g</string>
+	<string>19E266</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
-	<string>2.1.2, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
+	<string>2.1.3, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
 	<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1.2</string>
+	<string>2.1.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,21 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.1.2</string>
+	<string>2.1.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11C504</string>
+	<string>11E146</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19B90</string>
+	<string>19E258</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1130</string>
+	<string>1140</string>
 	<key>DTXcodeBuild</key>
-	<string>11C504</string>
+	<string>11E146</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALPS GlidePoint</key>
@@ -436,7 +436,7 @@
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.acidanthera.voodoo.driver.PS2Controller</key>
-		<string>2.1.2</string>
+		<string>2.1.3</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>1.0.0b1</string>
 		<key>com.apple.kpi.iokit</key>
