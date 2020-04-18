@@ -89,7 +89,7 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 
 - USB定制（采用 `ACPI` 方式，为使用 `OC` 做准备）
 
-- 声卡
+- 声卡 [声卡 ID 使用说明](Changelog.md#oc--clover-%E5%85%B3%E4%BA%8E%E5%A3%B0%E5%8D%A1id-%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5)
 
 - 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/CLOVER/ACPI/patched`
 
