@@ -1,5 +1,16 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- 04-18-2020:  
+  ### OC / Clover 关于声卡ID 使用情况
+  - `layout-id` 暂时改为 `11` 正常；
+  - 目前使用 `99` `可能` 出现耳机无人声;
+  - 有特殊用途( `mic 暂不可用，使用外接麦克风，但又想设置内置扬声器`)：`100`; 
+  - - 使用 `100` 下默认:
+  - - 输出：1.内置扬声器，2.耳机(即使没接入耳机)；
+  - - 输入：1.内置麦克风，2.线路输入(即使没接入外接设备)；
+
+
+
 - 04-08-2020-OC(@宪武):
   - `AppleXcpmCfgLock`、`AppleXcpmExtraMsrs`设置`false`
   - 添加`VoodooInput.kext`驱动
