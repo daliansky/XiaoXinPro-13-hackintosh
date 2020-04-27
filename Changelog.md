@@ -1,5 +1,18 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- 04-26-2020:  
+  ### OC / Clover
+  - 加回 `SSDT-GPRW.aml`
+  - 禁用 `SSDT-USBX.aml`
+  - `SSDT-PCI.LPCB-Wake-AOAC.aml` 重命名为 `SSDT-PCI0.LPCB-Wake-AOAC.aml`
+  - 默认内置 `DW1820A` 网卡驱动，根据网卡类型去或留
+  - 默认声卡 `layout-id` 为 `100`，根据需要可设置 `11`, `99`
+  - 去除 `CPUFriend.kext`、`CPUFriendDataProvider.kext`
+  - 机型由 `MacBookPro15,4` 更新为 `MacBookAir9,1`，需要重新设置三码，不然关于本机还是显示 `MacBook Pro`
+  - `kexts` 日常驱动更新
+  - `OC`更新为`0.5.8`
+  - `Clover` 版本无更新
+
 - 04-18-2020:  
   ### OC / Clover 关于声卡ID 使用情况
   - `layout-id` 暂时改为 `11` 正常；

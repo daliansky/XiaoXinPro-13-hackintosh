@@ -1,0 +1,9 @@
+加回SSDT-GPRW.aml
+禁用：SSDT-USBX.aml
+SSDT-PCI.LPCB-Wake-AOAC.aml重命名为 SSDT-PCI0.LPCB-Wake-AOAC.aml
+内置DW1820A 网卡驱动，根据网卡类型去留
+声卡layout-id为100，
+去除CPUFriend.kext、CPUFriendDataProvider.kext
+机型由MacBookPro15,4更新为MacBookAir9,1
+OC更新为0.5.8
+日常驱动更新（可能解决部分人反馈双指难触发？）

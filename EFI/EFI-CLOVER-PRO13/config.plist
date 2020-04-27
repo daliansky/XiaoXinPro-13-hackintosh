@@ -178,13 +178,13 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_PRW to XPRW</string>
+					<string>GPRW to XPRW</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1BSVw==</data>
+					<data>R1BSVwI=</data>
 					<key>Replace</key>
-					<data>WFBSVw==</data>
+					<data>WFBSVwI=</data>
 				</dict>
 			</array>
 		</dict>
