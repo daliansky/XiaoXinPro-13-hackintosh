@@ -1,5 +1,38 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+ - 05-04-2020: 
+   ### OC(`@宪武`)
+    - `SSDT-OCPublic-Merge.aml` 合并 `SSDT-EC.aml`、`SSDT-RTC0.aml`、`SSDT-USBX.aml`、`SSDT-ALS0.aml`、`SSDT-MCHC.aml`
+    - `AllowNvramReset` 设置 `true`，允许 `reset Nvram`
+    - 外置引用 `VoodooInput` 改为内置 `VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext`
+    - 添加 `NVMeFix.kext`
+    - 日常更新 `kexts`
+    - 更新 [OC releases v0.5.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)
+
+   ### MOD OC(`基于OC`)
+    - 去除 `-v`
+    - 禁用`Entries`, 改为通用设置，双系统引导(引导Windows)：`\EFI\Microsoft\Boot\bootmgfw.efi`
+    - 此版本比原版多了 `ACPI-> Quirks-> EnableForAll,Booter-> Quirks-> EnableForAll,Misc->boot->SkipCustomEntryCheck` 三个选项
+    - 安装系统或进Recovery模式可以选：`config-安装系统或进Recovery模式.plist`
+    - 更新 [OC releases N-d-k-0.5.8](https://github.com/n-d-k/OpenCorePkg/releases/tag/N-d-k-0.5.8)
+    - 更多请看： [n-d-k / OpenCorePkg](https://github.com/n-d-k/OpenCorePkg) 或 [教程](http://bbs.pcbeta.com/viewthread-1838814-1-1.html)
+
+   ### CLOVER(`移植OC更新`)
+    - 去除 `-v`
+    - 日常更新 `kexts`
+    - 添加 `NVMeFix.kext`
+    - 设置机型为 `MacBookAir9,1`
+    - 去除`CPU，Type`: `0x0705`,已自动识别 `i7`
+    - 移除 `config_Install.plist`,下面说明 `CLOVER 安装(12-4-2019) 或 Recovery 模式`
+    - `SSDT-OCPublic-Merge.aml` 合并 `SSDT-EC.aml`、`SSDT-RTC0.aml`、`SSDT-USBX.aml`、`SSDT-ALS0.aml`、`SSDT-MCHC.aml`
+    - 更新 [Clover_r5115](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5115)
+
+   ### CLOVER 安装(`12-4-2019`) 或 Recovery 模式
+   安装请使用：`Pro13_I7_Installer_DW1820A_and_UMIS_12-4-2019_by_黑果小兵.zip`
+   - `安装系统` 或 `进Reocery模式` 请使用Clover下的：`config_Installer.plist`，[安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)
+   - 安装系统后进系统请`一定要执行` `重建缓存`：软件或 命令： `sudo kextcache -i /`
+
+
 - 04-26-2020:  
   ### OC / Clover
   - 加回 `SSDT-GPRW.aml`
