@@ -55,6 +55,34 @@
 				<string>ApIst</string>
 			</dict>
 		</array>
+		<key>#SortedOrder</key>
+		<array>
+			<string>SSDT.aml</string>
+			<string>SSDT-0.aml</string>
+			<string>SSDT-1.aml</string>
+			<string>SSDT-2.aml</string>
+			<string>SSDT-3.aml</string>
+			<string>SSDT-4.aml</string>
+			<string>SSDT-5.aml</string>
+			<string>SSDT-6.aml</string>
+			<string>SSDT-7.aml</string>
+			<string>SSDT-8.aml</string>
+			<string>SSDT-9.aml</string>
+			<string>SSDT-10.aml</string>
+			<string>SSDT-11.aml</string>
+			<string>SSDT-12.aml</string>
+			<string>SSDT-13.aml</string>
+			<string>SSDT-14.aml</string>
+			<string>SSDT-15.aml</string>
+			<string>SSDT-16.aml</string>
+			<string>SSDT-17.aml</string>
+			<string>SSDT-18.aml</string>
+			<string>SSDT-19.aml</string>
+			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-LPC.aml</string>
+			<string>SSDT-UIAC.aml</string>
+			<string>SSDT-PNLF.aml</string>
+		</array>
 		<key>AutoMerge</key>
 		<false/>
 		<key>DSDT</key>
@@ -130,13 +158,23 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_S3 to XS3</string>
+					<string>Name_S3 to XS3</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>X1MzXw==</data>
 					<key>Replace</key>
 					<data>WFMzXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_Q50 to XQ50</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E1MA==</data>
+					<key>Replace</key>
+					<data>WFE1MA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -184,7 +222,7 @@
 		<key>Arguments</key>
 		<string>dart=0 keepsyms=1 slide=0 -lilubetaall -alcdbg alcid=100 -alcbeta -igfxmlr brcmfx-country=#a</string>
 		<key>CustomLogo</key>
-		<string>Apple</string>
+		<false/>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -198,7 +236,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -229,32 +267,28 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4331</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
 				<key>pci-aspm-default</key>
-				<data>AgAAAA==</data>
+				<integer>0</integer>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>pci-aspm-default</key>
-				<data>AgEAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>device-id</key>
-				<data>cKEAAA==</data>
-				<key>layout-id</key>
-				<data>ZAAAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>BAClPg==</data>
 				<key>device-id</key>
-				<data>mz4AAA==</data>
-				<key>dpcd-max-link-rate</key>
-				<data>CgAAAA==</data>
-				<key>enable-dpcd-max-link-rate-fix</key>
+				<data>pT4AAA==</data>
+				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
@@ -276,8 +310,63 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4331</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>BCM4350 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>Airport</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>device-id</key>
+				<data>cKEAAA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
+				<key>layout-id</key>
+				<integer>100</integer>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>BQCmPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device-id</key>
+				<data>pj4AAA==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel Iris Plus Graphics 655</string>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
@@ -424,7 +513,7 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>ProductName</key>
-		<string>MacBookAir9,1</string>
+		<string>MacBookPro15,4</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>

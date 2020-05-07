@@ -130,13 +130,23 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_S3 to XS3</string>
+					<string>Name_S3 to XS3</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>X1MzXw==</data>
 					<key>Replace</key>
 					<data>WFMzXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_Q50 to XQ50</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E1MA==</data>
+					<key>Replace</key>
+					<data>WFE1MA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
