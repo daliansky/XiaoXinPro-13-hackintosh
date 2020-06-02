@@ -1,5 +1,20 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+ - ### 06-02-2020-OC(`@宪武`):
+    - 添加 `boot-args`: `rtcfx_exclude=80-AB,B0-B4`, 以及对应的驱动 `RTCMemoryFixup.kext`
+    - 屏蔽仿冒 `Emulate`，即屏蔽 `Cpuid1Data`、`Cpuid1Mask`
+    - 删除 `SSDT-XSPI.aml`
+    - 删除 `NVMeFix.kext`
+    - 删除 `DVMT` 补丁: 1. `Kernel -> Patch` 的两个 `DVMT` 补丁, 2. `DeviceProperties` 下的 `framebuffer-fbmem`、`framebuffer-stolenmem`
+    - 删除 `DW1820A` 相关驱动：`AirportBrcmFixup.kext、BrcmBluetoothInjector.kext、BrcmFirmwareData.kext、BrcmPatchRAM3.kext`
+    - 更新：`OC 0.5.9`， `kexts` 日常更新(`PS：触摸板驱动自行更新`) 
+
+    - ### 注意：
+    - 1.因删除了 `DVMT` 相关补丁，可能需要 `CLCN32WW.DPC10.rar` 或使用 `解锁DVMT工具` 解除`DVMT`限制，刷`BIOS`有风险，后果自负
+    - 2.`i7或部分i5机型`需要去除屏蔽仿冒 `Emulate`，即 `Cpuid1Data`、`Cpuid1Mask`
+
+    - 更多细节请看 《EFI-OC-PRO13使用说明.pdf》或 《[OC-little](https://github.com/daliansky/OC-little)》
+
  - 05-04-2020: 
    ### OC(`@宪武`)
     - `SSDT-OCPublic-Merge.aml` 合并 `SSDT-EC.aml`、`SSDT-RTC0.aml`、`SSDT-USBX.aml`、`SSDT-ALS0.aml`、`SSDT-MCHC.aml`
