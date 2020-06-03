@@ -1,5 +1,16 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- ### 06-03-2020-Clover
+
+  - 添加 引导参数: `rtcfx_exclude=80-AB,B0-B4`, 以及其驱动 `RTCMemoryFixup.kext` 详情看[CMOS相关](https://github.com/daliansky/OC-little/tree/master/15-CMOS%E7%9B%B8%E5%85%B3)
+  - 删除 `SSDT-XSPI.aml`
+  - 删除 `NVMeFix.kext`
+  - 删除 `VoodooInput.kext`
+  - 更新 `kexts` 到最新版本
+  - 更新 `DVMT` 补丁匹配系统说明 for (@daliansky)
+  - ## 注意
+  - 以上部分同步 `OC`  for (@宪武)，但保留 `DVMT`补丁 和 `DW1820A` 网卡相关驱动
+
  - ### 06-02-2020-OC(`@宪武`):
     - 添加 `boot-args`: `rtcfx_exclude=80-AB,B0-B4`, 以及对应的驱动 `RTCMemoryFixup.kext`
     - 屏蔽仿冒 `Emulate`，即屏蔽 `Cpuid1Data`、`Cpuid1Mask`
