@@ -20,14 +20,17 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 
 ## 安装部分
 
-混搭硬盘
-- SAMSUNG开头的是三星（三星PM981a：`SAMSUNG MZVLB512HBJQ-000L2`)
-- UMIS开头的是忆联（忆联AH530）
-- INTEL开头的是因特尔（INTEL 760P)
-- Hynix开头的是西数（Hynix PC601)
+混搭硬盘: （`黑苹果下：可用、不可用`）
+- `可用`：UMIS开头的是忆联（忆联AH530）
+- `可用`：INTEL开头的是因特尔（INTEL 760P)
+- `不可用`：SKHynix开头的是海力士（Hynix PC601 ?：`SK HYNIX SKHynix_HFS512GD9TNI-L2A0B`)
+- `不可用`：SAMSUNG开头的是三星（三星PM981a：`SAMSUNG MZVLB512HBJQ-000L2`)  
 
-如果你的机子硬盘是三星固态硬盘(`三星PM981a`)，  
-为了更好使用 `macOS` ，强烈建议替换其他的，切勿在群里讨论，具体请百度 
+`PS`: 以上是已知道型号，倘若还有其他型号：既不代表可用，也代表不可用！
+
+
+如果你的机子硬盘是三星固态硬盘(`SAMSUNG MZVLB512HBJQ-000L2`) 或 海力士(`SKHynix_HFS512GD9TNI-L2A0B`)，  
+为了更好使用 `macOS` ，强烈建议替换其他型号 
 
 详细的安装教程请移步：[联想小新PRO 13 2019兼macOS Catalina安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html) 
 
