@@ -23,6 +23,7 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 混搭硬盘: （`黑苹果下：可用、不可用`）
 - `可用`：UMIS开头的是忆联（忆联AH530）
 - `可用`：INTEL开头的是因特尔（INTEL 760P)
+- `可用`：WD BLACK开头的是西数（SN 730)
 - `不可用`：SKHynix开头的是海力士（Hynix PC601 ?：`SK HYNIX SKHynix_HFS512GD9TNI-L2A0B`)
 - `不可用`：SAMSUNG开头的是三星（三星PM981a：`SAMSUNG MZVLB512HBJQ-000L2`)  
 
