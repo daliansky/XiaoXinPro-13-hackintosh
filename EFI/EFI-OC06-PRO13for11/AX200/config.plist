@@ -481,16 +481,16 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x1C,0x0)</key>
 			<dict>
-				<key>#pci-aspm-default</key>
+				<key>pci-aspm-default</key>
 				<data>
 				AgAAAA==
 				</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>#pci-aspm-default</key>
+				<key>pci-aspm-default</key>
 				<data>
 				AgEAAA==
 				</data>
