@@ -1,5 +1,24 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- ### 0713-2020-OC:
+
+  - `OC` 和 `BOOT` 这两个文件夹 来自 `宪武`发群里的 `EFI-OC06-PRO13for11.zip`
+
+  - `AX200` 文件夹：集成 AX200 网卡驱动，包括 Wi-Fi和 蓝牙 驱动，手动开启【`以太网`】才行使用；
+
+  - `DW1820A` 文件夹：基成 DW1820A 网卡驱动，具体细节看文件夹里面的说明
+
+  - ### EFI-OC06-PRO13for11.zip(`@宪武`):
+    - 支持 [Big Sur(11) 安装](https://blog.daliansky.net/WeChat-First-macOS-Big-Sur-Beta-2-Installer-for-OpenCore-and-PE-dual-EFI-partition-original-image.html)
+    - `SMCBatteryManager.kext`现在无法驱动 `MAC11`，暂时改为 `ACPIBatteryManager.kext`
+    - `SSDT-OCPublic-Merge.aml`去掉了`RTC部分`，而小新PRO仍然用`SSDT-RTC_Y-AWAC_N.aml`为`RTC`打补丁(`RTC很特殊，依赖于机器本身，可能不同的机器RTC形式不同`)
+
+    - 强烈建议把11安装到新分区
+    - 老的MAC系统下载APP，安装时选择新分区，安装过程重启4-5次
+    - 先用磁盘工具给MAC11分区，然后安装下载的APP，安装过程提示安装位置，选择刚才的MAC11
+
+    -  ### BIOS 设置：EFI-OC-PRO13使用说明.pdf
+
 - ### 06-03-2020-Clover
 
   - 添加 引导参数: `rtcfx_exclude=80-AB,B0-B4`, 以及其驱动 `RTCMemoryFixup.kext` 详情看[CMOS相关](https://github.com/daliansky/OC-little/tree/master/15-CMOS%E7%9B%B8%E5%85%B3)
