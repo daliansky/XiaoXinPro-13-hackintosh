@@ -1,6 +1,19 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
-- ### 0713-2020-OC:
+- # 0717-2020: Clover + OC
+  - ### CLOVER_7-17-2020小兵自用版，支持BS.zip(@daliansky):
+    - 更新`DVMT补丁`至`10.15.6`等
+
+  - ### EFI-OC06-PRO13(@宪武):
+    - 更新 `SMC*.kext` 感应器驱动支持 11 (`Big Sur`)
+    - 更新 `RTCMemoryFixup.kext`
+
+  - ###  附加 `EFI-OC06-PRO13`更新：
+    - AX200
+    - DW1820A
+    - i7或部分i5 (内置DVMT补丁支持到15.6+仿冒CPUID+DW1820A+声卡id11)
+
+- # 0713-2020-OC:
 
   - `OC` 和 `BOOT` 这两个文件夹 来自 `宪武`发群里的 `EFI-OC06-PRO13for11.zip`
 
@@ -19,7 +32,7 @@
 
     -  ### BIOS 设置：EFI-OC-PRO13使用说明.pdf
 
-- ### 06-03-2020-Clover
+- # 06-03-2020-Clover
 
   - 添加 引导参数: `rtcfx_exclude=80-AB,B0-B4`, 以及其驱动 `RTCMemoryFixup.kext` 详情看[CMOS相关](https://github.com/daliansky/OC-little/tree/master/15-CMOS%E7%9B%B8%E5%85%B3)
   - 删除 `SSDT-XSPI.aml`
@@ -30,7 +43,7 @@
   - ## 注意
   - 以上部分同步 `OC`  for (@宪武)，但保留 `DVMT`补丁 和 `DW1820A` 网卡相关驱动
 
- - ### 06-02-2020-OC(`@宪武`):
+ - # 06-02-2020-OC(`@宪武`):
     - 添加 `boot-args`: `rtcfx_exclude=80-AB,B0-B4`, 以及对应的驱动 `RTCMemoryFixup.kext`
     - 屏蔽仿冒 `Emulate`，即屏蔽 `Cpuid1Data`、`Cpuid1Mask`
     - 删除 `SSDT-XSPI.aml`
@@ -45,7 +58,7 @@
 
     - 更多细节请看 《EFI-OC-PRO13使用说明.pdf》或 《[OC-little](https://github.com/daliansky/OC-little)》
 
- - 05-04-2020: 
+ - # 05-04-2020: 
    ### OC(`@宪武`)
     - `SSDT-OCPublic-Merge.aml` 合并 `SSDT-EC.aml`、`SSDT-RTC0.aml`、`SSDT-USBX.aml`、`SSDT-ALS0.aml`、`SSDT-MCHC.aml`
     - `AllowNvramReset` 设置 `true`，允许 `reset Nvram`
@@ -78,7 +91,7 @@
    - 安装系统后进系统请`一定要执行` `重建缓存`：软件或 命令： `sudo kextcache -i /`
 
 
-- 04-26-2020:  
+- # 04-26-2020:  
   ### OC / Clover
   - 加回 `SSDT-GPRW.aml`
   - 禁用 `SSDT-USBX.aml`
@@ -91,7 +104,7 @@
   - `OC`更新为`0.5.8`
   - `Clover` 版本无更新
 
-- 04-18-2020:  
+- # 04-18-2020:  
   ### OC / Clover 关于声卡ID 使用情况
   - `layout-id` 暂时改为 `11` 正常；
   - 目前使用 `99` `可能` 出现耳机无人声;
@@ -102,7 +115,7 @@
 
 
 
-- 04-08-2020-OC(@宪武):
+- # 04-08-2020-OC(@宪武):
   - `AppleXcpmCfgLock`、`AppleXcpmExtraMsrs`设置`false`
   - 添加`VoodooInput.kext`驱动
   - 移除`disable-external-gpu`属性
@@ -111,7 +124,7 @@
   - 更新`SSDT-RTC_Y-AWAC_N.aml`
   - 更新：`OC(0.5.8)`、`kexts`驱动日常更新
 
-- 3-24-2020  
+- # 3-24-2020  
   Clover/OC （@宪武）
   - 优化触控板驱动增加延迟、减少误触。使用`AOAC-PRW`全局更名（[详见OC-little](https://github.com/daliansky/OC-little/tree/master/01-关于AOAC/01-5-AOAC-PRW全局更名)）
   - ### ACPI-Add下
@@ -123,18 +136,18 @@
   - `Find: 5F505257`
   - `Replace: 58505257`
 
-- 3-18-2020  
+- # 3-18-2020  
   - Clover/OC:
   - 触摸板：优化三指和四肢
 
-- 3-11-2020(@宪武)
+- # 3-11-2020(@宪武)
 
   - OC 分支更新
   - 更新OC版本；
   - 更新DVMT支持15.4;
   - 屏蔽*S键，Fn+C/P亮度调节，开机键亮屏
 
-- 3-8-2020(@daliansky)
+- # 3-8-2020(@daliansky)
 
   - CLOVER 分支更新
   - 声卡：新增`layout-id:100`，手动切换输入与输出节点，以解决无法驱动`Intel SST` DMIC内麦所带来的一系列问题
@@ -142,7 +155,7 @@
 
   
 
-- 02-28-2020
+- # 02-28-2020
   
   #### OC(@宪武大佬)
    - 更新OC，为下次更新OC声音(指OC的一个功能)准备；
@@ -151,32 +164,32 @@
    - i5/i7合二为一；
    - USB供电(快充？需要手机设备支持)
    - Fn+Q 唤醒
- - [具体详情](/EFI/EFI-OC-PRO13-AOAC/EFI-OC.md)
+  - [具体详情](/EFI/EFI-OC-PRO13-AOAC/EFI-OC.md)
   
-- 02-18-2020
+- # 02-18-2020
   #### OC(@宪武大佬)
     - 触摸板驱动(`02-17`)；
     - 关闭触摸板方法 `FN+F6` 
     - 唤醒方法:`电源键唤醒`
     - 优化：`SSDT-I2CxConf.aml`做了较大修改，添加了保护，适用于所有机器
 
-- 02-17-2020
+- # 02-17-2020
   #### Clover(@小兵大佬)
     - 添加触摸板驱动及相关信息；
 
-- 01-29-2020
+- # 01-29-2020
   #### OC
     - 更新OC；
     - ALC声卡；
   
-- 01-16-2020
+- # 01-16-2020
   #### Clover
     - 去除-v；
     - 修改因删除主题后开机显示白色背景+logo：改为开机显示为黑色+白色logo；
     - 修改开机第一阶段logo大小；
     - 显示【关于本机 - 内存 】
 
-- 01-08-2020
+- # 01-08-2020
   #### OC （宪武大佬更新）
     - 删除VirtualSmc.efi以及config中列表;
     - config新增-OSInfo;
@@ -199,13 +212,13 @@
     - config-i7.plist为i7机型使用，与i5区别在于DVMT;
     - config-识别i7.plist为i7机型使用，在config-i7.plist基础上补充完整信息，取消自动补充参数，识别i7（关于本机）
 
-- 01-06-2020  
-  #### CLOVER（小兵大佬更新）
+- # 01-06-2020  
+  #### CLOVER(@daliansky)
   - 添加对 `DW1820A` 注入 `pci-aspm-default`(请根据 `DW1820A` 的 `PCI`地址不同更改，请勿直接套搬，参考 [教程](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html) )
   - `去掉`启动参数 `-alcbeta` (与 `AppleALC` 有关)
   - 暂时`注释`声卡 `PCI` 注入(暂时使用万能声卡 `VoodooHDA` 驱动)
 
-- 01-01-2020  
+- # 01-01-2020  
   - `OC` 暂时不支持引导安装，只驱动集显；
   - `CLOVER` 可以安装引导 和 驱动集显；
   - `CLOVER`、`OC` 内置 `DW1820A` 蓝牙、Wi-Fi 驱动;
