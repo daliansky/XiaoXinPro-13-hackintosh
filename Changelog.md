@@ -1,5 +1,15 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 0727-2020: OC、Clover: 
+  - ## OC
+    - 更新 DVMT 补丁到10.15.6
+    - 修复部分新机未设置CFG 相关设置导致无法安装
+
+  - ## Clover
+    - 基于@daliansky自用(EFI-CLOVER-PRO13)
+    - 更新 DVMT 补丁到10.15.6
+    - 新加config-installer-recovery.plist
+
 - # 0717-2020: Clover + OC
   - ### CLOVER_7-17-2020小兵自用版，支持BS.zip(@daliansky):
     - 更新`DVMT补丁`至`10.15.6`等

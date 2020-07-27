@@ -63,6 +63,10 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 - 镜像下载
   
     - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
+
+- 问题解答(FAQ)
+  - [Wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)
+
 - EFI下载
   
   - [Releases](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases)
