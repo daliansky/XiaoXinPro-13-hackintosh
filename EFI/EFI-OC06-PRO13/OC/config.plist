@@ -1067,7 +1067,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -lilubeta rtcfx_exclude=80-AB,B0-B4 -v</string>
+				<string>keepsyms=1 -lilubeta rtcfx_exclude=80-AB,B0-B4 vsmcgen=1 -v</string>
 				<key>csr-active-config</key>
 				<data>
 				5wMAAA==

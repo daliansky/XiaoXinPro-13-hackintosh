@@ -994,7 +994,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>DVMTpatch-10.15.4</string>
+				<string>DVMTpatch-10.15.4-10.15.5-10.15.6</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1011,7 +1011,7 @@
 				<data>
 				</data>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>19.6.0</string>
 				<key>MinKernel</key>
 				<string>19.4.0</string>
 				<key>Replace</key>

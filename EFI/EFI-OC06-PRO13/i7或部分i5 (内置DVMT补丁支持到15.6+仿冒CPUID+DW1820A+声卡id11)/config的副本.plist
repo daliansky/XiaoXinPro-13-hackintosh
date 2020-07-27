@@ -497,7 +497,7 @@
 				<key>AAPL,slot-name</key>
 				<string>WLAN</string>
 				<key>compatible</key>
-				<string>pci14e4,43a3</string>
+				<string>pci14e4,43a0</string>
 				<key>device_type</key>
 				<string>Airport Extreme</string>
 				<key>model</key>
@@ -1024,7 +1024,7 @@
 				<key>Base</key>	
 				<string></string>	
 				<key>Comment</key>	
-				<string>DVMTpatch-10.15.4,10.15.5,10.15.6</string>	
+				<string>DVMTpatch-10.15.4-10.15.5-10.15.6</string>
 				<key>Count</key>	
 				<integer>0</integer>	
 				<key>Enabled</key>	
@@ -1249,7 +1249,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -lilubeta rtcfx_exclude=80-AB,B0-B4 brcmfx-country=#a -v</string>
+				<string>keepsyms=1 -lilubeta rtcfx_exclude=80-AB,B0-B4 brcmfx-country=#a vsmcgen=1 -v</string>
 				<key>csr-active-config</key>
 				<data>
 				5wMAAA==
