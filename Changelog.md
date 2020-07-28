@@ -1,5 +1,36 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 0729-2020
+  - ## EFI_OC_0.6.0_for_xiaoxinPro13_by_daliansky(黑果小兵自用版)
+     OC更新_By_ @daliansky
+
+    - 直装`bs beta3`
+    - 带`gui`
+    - 内置`DW1820A`驱动，
+    - 适用于`10.15、11.0`
+    - `config.plist`：不含`DVMT补丁`，`AppleCpuPmCfgLock`、`AppleXcpmCfgLock`设置为`true`
+
+   - ## EFI-OC06-PRO13_by_xianwu(@宪武)
+     - 更新 `DVMT 补丁`到 `10.15.6`；
+     - 修复部分新机未设置`CFG` 相关设置导致无法安装
+     - 添加启动参数：`vsmcgen=1`
+
+   - ## EFI-OC-PRO13(end-of-15.6)(@宪武)
+     - 更新 `DVMT 补丁`到 `10.15.6`；
+     - 修复部分新机未设置`CFG` 相关设置导致无法安装
+
+   - ## EFI-CLOVER-PRO13(end-of-15.6)(@daliansky)
+     - 基于@daliansky自用(EFI-CLOVER-PRO13)
+     - 更新 `DVMT 补丁`到 `10.15.6`；
+     - 新加`config-installer-recovery.plist`
+
+   - ## EFI-OC-PRO13-MOD(end-of-15.6)
+     - 更新 `DVMT 补丁`到 `10.15.6`；
+     - 修复部分新机未设置`CFG` 相关设置导致无法安装
+
+
+
+
 - # 0727-2020: OC、Clover: 
   - ## OC
     - 更新 DVMT 补丁到10.15.6
