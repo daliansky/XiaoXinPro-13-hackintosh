@@ -1,5 +1,10 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 0727-2020: OC、Clover: 
+  - ## OC
+    - 更新 DVMT 补丁到10.15.6
+    - 修复部分新机未设置CFG 相关设置导致无法安装
+
 - # 0726-2020:OC
   - ## OC更新_By_ @daliansky
     - 直装`bs beta3`
@@ -7,11 +12,6 @@
     - 内置`DW1820A`驱动，
     - 适用于`10.15、11.0`
     - `config.plist`：不含`DVMT补丁`，`AppleCpuPmCfgLock`、`AppleXcpmCfgLock`设置为`true`
-
-- # 0727-2020: OC、Clover: 
-  - ## OC
-    - 更新 DVMT 补丁到10.15.6
-    - 修复部分新机未设置CFG 相关设置导致无法安装
 
   - ## Clover
     - 基于@daliansky自用(EFI-CLOVER-PRO13)
