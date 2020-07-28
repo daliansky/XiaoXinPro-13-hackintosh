@@ -1,5 +1,13 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 0726-2020:OC
+  - ## OC更新_By_ @daliansky
+    - 直装`bs beta3`
+    - 带`gui`
+    - 内置`DW1820A`驱动，
+    - 适用于`10.15、11.0`
+    - `config.plist`：不含`DVMT补丁`，`AppleCpuPmCfgLock`、`AppleXcpmCfgLock`设置为`true`
+
 - # 0727-2020: OC、Clover: 
   - ## OC
     - 更新 DVMT 补丁到10.15.6
