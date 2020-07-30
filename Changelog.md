@@ -1,5 +1,20 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 0730-2020
+  - ## EFI-OC06-PRO13_by_xianwu(@宪武29号OC版本)
+
+    - 把 `SSDT-EC.aml` 从 `SSDT-OCPublic-Merge.aml` 分离出来
+    - 驱动 `kexts` 日常更新
+    - `OpenCore 0.60` 相关更新
+    - 删除 `RTCMemoryFixup.kext`
+    - 新加 `SMCDellSensors.kext`
+    - 声卡ID 从 `DeviceProperties / Add / PciRoot(0x0)/Pci(0x1f,0x3)` 中 删除
+    - 声卡ID 在 `NVRAM / Add / 7C436110-AB2A-4BBB-A880-FE41995C9F82 / boot-args` 中设置：`alcid=100`
+    - 放行 `仿冒Emulate`: `Cpuid1Data、Cpuid1Mask`
+    - `config.plist`：不含`DVMT补丁`，`AppleCpuPmCfgLock`、`AppleXcpmCfgLock` 为 `false`
+    - 该版本 `OC` 解决 `i7` 或 `部分特殊i5` 在使用 `docker` 中 遇到 `filesystem layer verification failed for digest` 问题，涉及 `仿冒CPUID` : CPUID feature may not be reported to macOS release kernels when emulating the CPUID
+  causing crashes of select programs relying on Hypervisor.framework like Docker，详情看 [@/acidanthera/bugtracker/issues/1035](https://github.com/acidanthera/bugtracker/issues/1035)
+
 - # 0729-2020
   - ## EFI_OC_0.6.0_for_xiaoxinPro13_by_daliansky(黑果小兵自用版)
      OC更新_By_ @daliansky
