@@ -89,7 +89,7 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 
 - 显示器亮度调节
 
-- 无线（[原网卡AX201](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%B0%8F%E6%96%B0pro13%E5%9C%A8macOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%8F%AF%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BD%91%E5%8D%A1) 在macOS 下可以驱动了(0802-2020)，当然[DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)使用体验上也不错)
+- 无线（[原网卡AX201](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%B0%8F%E6%96%B0pro13%E5%9C%A8macOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%8F%AF%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BD%91%E5%8D%A1) 在macOS 下可以驱动了(08-02-2020)，当然[DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)使用体验上也不错)
 
 - 触摸板 `02-17-2020` （1、`OC`关闭触摸板方法：`FN+F6`2、`目前触摸板驱动不支持14.x` ）
 
@@ -114,7 +114,7 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 - 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
 
 ## QQ群
-- 小新pro黑苹果    946132482  已满
+- 小新pro黑苹果    946132482  未满
 - 小新pro黑苹果技术群 673294583 未满
 - 小新pro13 黑苹果 insyde bios研究群 635160015  未满
 ### 为了更好地理解你遇到的问题，强烈建议：
