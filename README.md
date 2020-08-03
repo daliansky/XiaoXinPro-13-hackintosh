@@ -89,9 +89,9 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 
 - 显示器亮度调节
 
-- 无线（原网卡在macOS 下只能使用蓝牙，建议更换为 [DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html))
+- 无线（[原网卡AX201](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%B0%8F%E6%96%B0pro13%E5%9C%A8macOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%8F%AF%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BD%91%E5%8D%A1) 在macOS 下可以驱动了(0802-2020)，当然[DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)使用体验上也不错)
 
-- 触摸板 `2-17-2020` （1.`OC`关闭触摸板方法：`FN+F6`2.`目前触摸板驱动不支持14.x` ）
+- 触摸板 `02-17-2020` （1、`OC`关闭触摸板方法：`FN+F6`2、`目前触摸板驱动不支持14.x` ）
 
   ![TouchPad](./screenshot/TouchPad.png)
 
