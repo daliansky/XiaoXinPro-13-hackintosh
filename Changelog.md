@@ -1,6 +1,16 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
-- # 0730-2020
+- # 08-04-2020
+  - ## EFI-OC06-PRO13-1820A_by_xianwu(`@宪武`)
+
+    - 更新 [0.6.0 OC正式版 08-03-2020](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)
+    - 驱动 `kexts` 日常更新(`08-03-2020 releases`)
+    - 添加 `DW1820A` 驱动 以及设置对应的地区 `brcmfx-country=#a`
+    - 新加 `SSDT-BATS.aml`（ `VirtualSMC.kext和它的其他kext增加了电池信息驱动，，需要SSDT-BATS.aml补丁支持` )
+    - 电池补丁 `SSDT-OCBAT1-lenovoPRO13.aml`中 `ACDT` 改为 `OCLT`，统一命名@[OC-little/08-电池补丁](https://github.com/daliansky/OC-little/tree/master/08-%E7%94%B5%E6%B1%A0%E8%A1%A5%E4%B8%81)
+    - `config.plist`：1、不含`DVMT补丁`；2、`AppleCpuPmCfgLock`、`AppleXcpmCfgLock` 为 `false`
+
+- # 07-30-2020
   - ## EFI-OC06-PRO13_by_xianwu(@宪武29号OC版本)
 
     - 把 `SSDT-EC.aml` 从 `SSDT-OCPublic-Merge.aml` 分离出来
@@ -15,7 +25,7 @@
     - 该版本 `OC` 解决 `i7` 或 `部分特殊i5` 在使用 `docker` 中 遇到 `filesystem layer verification failed for digest` 问题，涉及 `仿冒CPUID` : CPUID feature may not be reported to macOS release kernels when emulating the CPUID
   causing crashes of select programs relying on Hypervisor.framework like Docker，详情看 [@/acidanthera/bugtracker/issues/1035](https://github.com/acidanthera/bugtracker/issues/1035)
 
-- # 0729-2020
+- # 07-29-2020
   - ## EFI_OC_0.6.0_for_xiaoxinPro13_by_daliansky(黑果小兵自用版)
      OC更新_By_ @daliansky
 
@@ -43,15 +53,13 @@
      - 更新 `DVMT 补丁`到 `10.15.6`；
      - 修复部分新机未设置`CFG` 相关设置导致无法安装
 
-
-
-
-- # 0727-2020: OC、Clover: 
+- # 07-27-2020
   - ## OC
     - 更新 DVMT 补丁到10.15.6
     - 修复部分新机未设置CFG 相关设置导致无法安装
 
-- # 0726-2020:OC
+- # 07-26-2020
+  - ## OC
   - ## OC更新_By_ @daliansky
     - 直装`bs beta3`
     - 带`gui`
@@ -64,7 +72,7 @@
     - 更新 DVMT 补丁到10.15.6
     - 新加config-installer-recovery.plist
 
-- # 0717-2020: Clover + OC
+- # 07-17-2020
   - ### CLOVER_7-17-2020小兵自用版，支持BS.zip(@daliansky):
     - 更新`DVMT补丁`至`10.15.6`等
 
@@ -77,7 +85,7 @@
     - DW1820A
     - i7或部分i5 (内置DVMT补丁支持到15.6+仿冒CPUID+DW1820A+声卡id11)
 
-- # 0713-2020-OC:
+- # 07-13-2020
 
   - `OC` 和 `BOOT` 这两个文件夹 来自 `宪武`发群里的 `EFI-OC06-PRO13for11.zip`
 
@@ -96,8 +104,8 @@
 
     -  ### BIOS 设置：EFI-OC-PRO13使用说明.pdf
 
-- # 06-03-2020-Clover
-
+- # 06-03-2020
+  - ## CLover
   - 添加 引导参数: `rtcfx_exclude=80-AB,B0-B4`, 以及其驱动 `RTCMemoryFixup.kext` 详情看[CMOS相关](https://github.com/daliansky/OC-little/tree/master/15-CMOS%E7%9B%B8%E5%85%B3)
   - 删除 `SSDT-XSPI.aml`
   - 删除 `NVMeFix.kext`
@@ -107,7 +115,8 @@
   - ## 注意
   - 以上部分同步 `OC`  for (@宪武)，但保留 `DVMT`补丁 和 `DW1820A` 网卡相关驱动
 
- - # 06-02-2020-OC(`@宪武`):
+ - # 06-02-2020
+    - ## OC(`@宪武`):
     - 添加 `boot-args`: `rtcfx_exclude=80-AB,B0-B4`, 以及对应的驱动 `RTCMemoryFixup.kext`
     - 屏蔽仿冒 `Emulate`，即屏蔽 `Cpuid1Data`、`Cpuid1Mask`
     - 删除 `SSDT-XSPI.aml`
@@ -188,7 +197,7 @@
   - 更新`SSDT-RTC_Y-AWAC_N.aml`
   - 更新：`OC(0.5.8)`、`kexts`驱动日常更新
 
-- # 3-24-2020  
+- # 03-24-2020  
   Clover/OC （@宪武）
   - 优化触控板驱动增加延迟、减少误触。使用`AOAC-PRW`全局更名（[详见OC-little](https://github.com/daliansky/OC-little/tree/master/01-关于AOAC/01-5-AOAC-PRW全局更名)）
   - ### ACPI-Add下
@@ -200,18 +209,18 @@
   - `Find: 5F505257`
   - `Replace: 58505257`
 
-- # 3-18-2020  
+- # 03-18-2020  
   - Clover/OC:
   - 触摸板：优化三指和四肢
 
-- # 3-11-2020(@宪武)
+- # 03-11-2020(@宪武)
 
   - OC 分支更新
   - 更新OC版本；
   - 更新DVMT支持15.4;
   - 屏蔽*S键，Fn+C/P亮度调节，开机键亮屏
 
-- # 3-8-2020(@daliansky)
+- # 03-08-2020(@daliansky)
 
   - CLOVER 分支更新
   - 声卡：新增`layout-id:100`，手动切换输入与输出节点，以解决无法驱动`Intel SST` DMIC内麦所带来的一系列问题
