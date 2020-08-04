@@ -6,8 +6,8 @@
     - 更新 [0.6.0 OC正式版 08-03-2020](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)
     - 驱动 `kexts` 日常更新(`08-03-2020 releases`)
     - 添加 `DW1820A` 驱动 以及设置对应的地区 `brcmfx-country=#a`
-    - 新加 `SSDT-BATS.aml`（ `VirtualSMC.kext和它的其他kext增加了电池信息驱动，，需要SSDT-BATS.aml补丁支持` )
-    - 电池补丁 `SSDT-OCBAT1-lenovoPRO13.aml`中 `ACDT` 改为 `OCLT`，统一命名@[OC-little/08-电池补丁](https://github.com/daliansky/OC-little/tree/master/08-%E7%94%B5%E6%B1%A0%E8%A1%A5%E4%B8%81)
+    - 新加 `SSDT-BATS.aml`：修正电池显示：`型号信息`为 `0`（ `VirtualSMC.kext和它的其他kext增加了电池信息驱动，，需要SSDT-BATS.aml补丁支持`  )
+    - `SSDT-OCBAT1-lenovoPRO13.aml`中 `ACDT` 改为 `OCLT`，统一命名@[OC-little/08-电池补丁](https://github.com/daliansky/OC-little/tree/master/08-%E7%94%B5%E6%B1%A0%E8%A1%A5%E4%B8%81)
     - `config.plist`：1、不含`DVMT补丁`；2、`AppleCpuPmCfgLock`、`AppleXcpmCfgLock` 为 `false`
 
 - # 07-30-2020
