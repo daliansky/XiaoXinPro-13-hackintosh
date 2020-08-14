@@ -1,5 +1,16 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 08-14-2020
+  - ## EFI-OC06-PRO13-1820A_by_xianwu(`@宪武`)
+    
+    - 更新(`10代`)触摸板驱动: (`08-13-2020自编译版本` [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C))
+    - 更新 `VirtualSMC` 以及对应的 `SSDT-BATS.aml`：[@Fix and improvement for supplement info #35](https://github.com/acidanthera/VirtualSMC/pull/35)
+    - **注意** `config.plist`：1、不含`DVMT补丁`；2、`AppleCpuPmCfgLock`、`AppleXcpmCfgLock` 为 `false`
+  
+  - ## 删除 `低版本EFI`： 
+    - `EFI-OC-PRO13(end-of-15.6)`
+    - `EFI-OC-PRO13-MOD(end-of-15.6)`
+
 - # 08-04-2020
   - ## EFI-OC06-PRO13-1820A_by_xianwu(`@宪武`)
 
