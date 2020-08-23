@@ -60,19 +60,19 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 
      
    
-- 镜像下载
+## 镜像下载
   
     - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
 
-- 问题解答(FAQ)
-  - ## [Wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)
+## 问题解答(FAQ)
+  - ### [Wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)
 
-- EFI下载
-  
-  - ## [Releases](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases)
-- 更新日志  
-  
-  - ## [Changelog](Changelog.md)
+## EFI 下载
+  - ### [Releases](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases)
+
+## 更新日志  
+  - ### [Changelog](Changelog.md)
+
 ## 注意
 
 - 安装注意：小新由于安装过程中触摸板可能无法驱动，使用U盘安装macOS会占用仅仅一个USB接口,
@@ -118,8 +118,8 @@ Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 - 小新pro黑苹果技术群 673294583 未满
 - 小新pro13 黑苹果 insyde bios研究群 635160015  未满
 ### 为了更好地理解你遇到的问题，强烈建议：
-- 先看 *[wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)*   
-- 不行就自行排错：例如：重建缓存，重启
+- 先看 **[wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)**   
+- 不行就自行排错：例如：`重建缓存`，`重启`
 - 贴`小新pro13的硬件信息`(如鲁大师截图)
-- `详细描述操作过程`
-- 提供`日志`或`完整截图`
+- 提供 `详细描述操作过程`
+- 提供 `日志` 或 `完整截图`
