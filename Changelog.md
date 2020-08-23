@@ -1,5 +1,17 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 08-23-2020
+  - ## 此OC 基于宪武的OC(`EFI-OC06-PRO13-1820A_by_xianwu(08-14-2020)`)
+  - ### 修改如下：
+
+    - 去除 `-v`
+    - 添加 `通用型 Windows 引导配置`
+    - 去除 `DW系列网卡驱动`
+    - 添加 `AX201/AX200 驱动`，包括[蓝牙驱动](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/1.1.2)、[Wi-Fi驱动](https://github.com/OpenIntelWireless/itlwm/releases/tag/v1.0.0)，此OC 使用的是 OpenIntelWireless 开源驱动
+    - 请自行下载 OpenIntelWireless 驱动Wi-Fi 对应的客户端 [HeliPort](https://github.com/OpenIntelWireless/HeliPort/releases)
+    - 更加详细的使用请移步 [这里](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/AX201-and-AX200)
+
+
 - # 08-14-2020
   - ## EFI-OC06-PRO13-1820A_by_xianwu(`@宪武`)
     
