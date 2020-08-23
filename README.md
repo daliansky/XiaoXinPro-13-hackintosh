@@ -1,6 +1,7 @@
 # XiaoXinPro-13-hackintosh
 
-Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
+## Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
+### 适用：`2019 & 2020款小新pro13(s) Intel版本`
 ## 电脑配置
 |规格 | 详细信息|
 |:-: | :-:|
