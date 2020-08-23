@@ -63,7 +63,7 @@
    
 ## 镜像下载
   
-    - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
+  - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
 
 ## 问题解答(FAQ)
   - ### [Wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)
