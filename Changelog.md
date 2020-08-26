@@ -10,7 +10,7 @@
     - 更新 `自编译 kexts`
     - 更新 `10代触摸板驱动`
     - 更新优化 `SSDT-BATS-PRO13.aml`
-    - 添加 `_DSM to XDSM` 补丁来实现屏蔽独显
+    - 添加 `_DSM to XDSM` 补丁来实现屏蔽独显：带独显的机器多个 `ACPI`：`SSDT-9-NvdTable`(可能是其他 `SSDT-*-NvdTable`)，这个文件和DSDT都存在独显路径的 `DSM`，2个 `DSM` 有冲突，可能导致屏蔽独显失败，简单的方法是禁止 `SSDT-9-NvdTable` 的 `DSM`
     - 去除 `FakePCIID.kext` 、`FakePCIID_Intel_HDMI_Audio.kext`
     - 内置 [Intel网卡驱动](https://github.com/OpenIntelWireless)，并 [设置ASPM工作模式](https://github.com/daliansky/OC-little/tree/master/01-%E5%85%B3%E4%BA%8EAOAC/01-5-%E8%AE%BE%E7%BD%AEASPM%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F)（`PciRoot(0x0)/Pci(0x1C,0x0)` 和 `PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)` 两处）
 
