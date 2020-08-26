@@ -1,10 +1,18 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 08-26-2020
+  - ## 此OC 来自 宪武的 EFI-OC061-PRO13-Intel
+    - 更新 [编译版 OC 2020-08-26](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-08-26)
+    - 添加 `SSDT-HPET-disable.aml`: 禁止HPET( 6代以后不需要HPET，对声音时而好时而坏有作用 )
+    - 设置 [ResetHwSig](https://github.com/acidanthera/OpenCorePkg/blob/ad2f37be12ee9e2c26dddf5320baa7f183ec40ee/Docs/Differences/Differences.tex#L1198-L1206) 为 true
+    - 设置 [ReleaseUsbOwnership](https://github.com/acidanthera/OpenCorePkg/blob/ad2f37be12ee9e2c26dddf5320baa7f183ec40ee/Docs/Differences/Differences.tex#L5834-L5841) 为 true（该设置 在之前 EFI 似乎会导致 `引导崩溃` by 宪武）
+      
+
 - # 08-24-2020
   - ## 此OC 来自 宪武的 EFI-OC061-PRO13-Intel
-      - 此版本OC 可能会在睡眠后无法连接热点：是RTC唤醒才重新启用了Wi-Fi，这个补丁把RTC唤醒禁用了
+      - ~~此版本OC 可能会在睡眠后无法连接热点：是RTC唤醒才重新启用了Wi-Fi，这个补丁把RTC唤醒禁用了~~
     ### 故修改如下：
-      - 把 `RTC补丁` 设置 禁用 即：`config.plist` 中 `923行` 设置 `false`
+      - ~~把 `RTC补丁` 设置 禁用 即：`config.plist` 中 `923行` 设置 `false`~~
     ### 下面正式描述 此OC 更新
     - 更新 `自编译 OC`
     - 更新 `自编译 kexts`
