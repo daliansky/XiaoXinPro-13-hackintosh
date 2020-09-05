@@ -1,5 +1,15 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 09-04-2020
+  - ## 此OC 来自 宪武的 EFI-OC061-PRO13-Intel
+    - `SSDT-PNLF-CFL.aml` 改名为  `SSDT-PNLF-ACPI.aml`： 优化亮度调节
+    - 删除(屏蔽)macOS内置触摸板驱动：`AppleIntelLpssI2C` 、`AppleIntelLpssI2CController`
+    - 对 macOS内置网络(以太网)驱动做处理：`IONetworkingFamily`
+    - `FuzzyMatch` 设置 `true`
+    - `JumpstartHotPlug` 设置 `false`
+    - OC 日常更新(编译版)
+    - kexts 日常更新
+
 - # 08-26-2020
   - ## 此OC 来自 宪武的 EFI-OC061-PRO13-Intel
     - 更新 [编译版 OC 2020-08-26](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-08-26)
