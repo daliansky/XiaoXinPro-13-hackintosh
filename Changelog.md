@@ -2,7 +2,7 @@
 
 - # 09-04-2020
   - ## 此OC 来自 宪武的 EFI-OC061-PRO13-Intel
-    - `SSDT-PNLF-CFL.aml` 改名为  `SSDT-PNLF-ACPI.aml`： 优化亮度调节
+    - `SSDT-PNLF-CFL.aml` 改名为  `SSDT-PNLF-ACPI.aml`： 不再推荐使用ACPI的方式实现亮度调节，而是使用VoodooPS2进行映射，新版voodoops2不再需要任何处理就可以调节核显亮度，原生亮度调节，详情看[@acidanthera/VoodooPS2/pull/22](https://github.com/acidanthera/VoodooPS2/pull/22)
     - 删除(屏蔽)macOS内置触摸板驱动：`AppleIntelLpssI2C` 、`AppleIntelLpssI2CController`
     - 对 macOS内置网络(以太网)驱动做处理：`IONetworkingFamily`
     - `FuzzyMatch` 设置 `true`
