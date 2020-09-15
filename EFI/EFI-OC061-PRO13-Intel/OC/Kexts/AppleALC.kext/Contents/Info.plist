@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20A5354i</string>
+	<string>18E226</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -29,19 +29,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12A8179i</string>
-	<key>DTPlatformName</key>
-	<string>macosx</string>
+	<string>10E1001</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>20A5343f</string>
+	<string>18E219</string>
 	<key>DTSDKName</key>
-	<string>macosx11.0</string>
+	<string>macosx10.14</string>
 	<key>DTXcode</key>
-	<string>1200</string>
+	<string>1020</string>
 	<key>DTXcodeBuild</key>
-	<string>12A8179i</string>
+	<string>10E1001</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>HDA Hardware Config Resource</key>
@@ -50,6 +48,36 @@
 			<string>com.apple.driver.AppleHDAHardwareConfigDriver</string>
 			<key>HDAConfigDefault</key>
 			<array>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
+					<integer>283902569</integer>
+					<key>Comment</key>
+					<string>Custom ALC269VD for ThinkPad T430</string>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6mAScfkAFHHEABRx0BAUce
+					FwFHH5ABVxxQAVcdEAFXHiEBVx8CAXcc8AF3
+					HQABdx4AAXcfQAGHHCABhx0QAYcegQGHHwIB
+					lxxwAZcdEAGXHqEBlx8CAacccAGnHRABpx6h
+					AacfAgG3HHABtx0QAbceoQG3HwIB1xxwAdcd
+					EAHXHqEB1x8CAecccAHnHRAB5x6hAecfAgFH
+					DAI=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>23</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
 					<data>
@@ -1701,6 +1729,83 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC245 for Ienovo by soto2080</string>
+					<key>CodecID</key>
+					<integer>283902533</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHQEBRx4XAUcfkAFHDAICFxwgAhcd
+					EAIXHiECFx8EAhcMAgGXHEABlx0QAZcegQGX
+					HwQ=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>11</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgIXDAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC245 for Ienovo by soto2080</string>
+					<key>CodecID</key>
+					<integer>283902533</integer>
+					<key>ConfigData</key>
+					<data>
+					AXccEAF3HQEBdx4XAXcfkAF3DAICFxwgAhcd
+					EAIXHiECFx8EAhcMAgGXHEABlx0QAZcegQGX
+					HwQ=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>12</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AXcMAgIXDAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>lunjielee - Realtek ALC245 for HP Omen 2020</string>
+					<key>CodecID</key>
+					<integer>283902533</integer>
+					<key>ConfigData</key>
+					<data>
+					AXccEAF3HQEBdx4XAXcfkAGXHDABlx0QAZce
+					gQGXHwMCFxwgAhcdEAIXHiECFx8DAhcMAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>13</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AhcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -5334,6 +5439,31 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC287</string>
+					<key>CodecID</key>
+					<integer>283902599</integer>
+					<key>ConfigData</key>
+					<data>
+					AXccEAF3HQEBdx4XAXcfkAIXHCACFx0QAhce
+					IQIXHwMCFwwCAZccMAGXHRABlx6BAZcfAw==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>11</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AhcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -9887,6 +10017,29 @@
 					<key>CodecID</key>
 					<integer>283904768</integer>
 					<key>CodecName</key>
+					<string>VictorXu -  Realtek ALCS1200A for Asrock Z490M-ITX</string>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHUABRx4RAUcfkQFHDAIBtxwgAbcd
+					QAG3HiEBtx8CAbcMAgGHHDABhx2QAYceoQGH
+					H5EBpxw/AacdMAGnHoEBpx8BAZccQAGXHZAB
+					lx6BAZcfAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>49</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgG3DAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>CodecID</key>
+					<integer>283904768</integer>
+					<key>CodecName</key>
 					<string>VictorXu -  Realtek ALCS1200A for Gigabyte B460M Aorus Pro</string>
 					<key>ConfigData</key>
 					<data>
@@ -11962,8 +12115,6 @@
 			<string>IOKit</string>
 		</dict>
 	</dict>
-	<key>LSMinimumSystemVersion</key>
-	<string>10.8</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 vit9696. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>

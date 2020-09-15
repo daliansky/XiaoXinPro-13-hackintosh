@@ -1,5 +1,17 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 09-15-2020
+  - ## EFI-OC061-PRO13-Intel
+    - 更新 OC ([ 0.6.1 releases 版](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.1))
+    - Lilu.kext ([ 1.4.7 releases 版](https://github.com/acidanthera/Lilu/releases/tag/1.4.7))
+    - WhateverGreen.kext ([ 1.4.2 releases 版](https://github.com/acidanthera/WhateverGreen/releases/tag/1.4.2))
+    - VirtualSMC.kext、SMC * .kext ([ 1.1.6 releases 版](https://github.com/acidanthera/VirtualSMC/releases/tag/1.1.6))
+    - AppleALC.kext ([ 1.5.2 releases 版](https://github.com/acidanthera/AppleALC/releases/tag/1.5.2))
+    - itlwm.kext ([ v1.1.0-alpha 版](https://github.com/OpenIntelWireless/itlwm/releases/tag/v1.1.0-alpha))
+    - VoodooPS2.kext ([ 2.1.7 自编译版](https://github.com/acidanthera/VoodooPS2/commit/d5f05415ac087ed4411b51ce73ac19c021bbaf48))
+    - `itlwx.kext` 合并为 `itlwm.kext`
+    - 删除 `SSDT-BKeyQ38Q39-LenovoPRO13.aml` 以及 `config.plist` 中对应的重命名: 由 VoodooPS2.kext 识别 亮度 `➕`、`➖`
+
 - # 09-04-2020
   - ## 此OC 来自 宪武的 EFI-OC061-PRO13-Intel
     - `SSDT-PNLF-CFL.aml` 改名为  `SSDT-PNLF-ACPI.aml`： 不再推荐使用ACPI的方式实现亮度调节，而是使用VoodooPS2进行映射，新版voodoops2不再需要任何处理就可以调节核显亮度，原生亮度调节，详情看[@acidanthera/VoodooPS2/pull/22](https://github.com/acidanthera/VoodooPS2/pull/22)
