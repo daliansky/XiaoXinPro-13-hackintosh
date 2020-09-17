@@ -27,17 +27,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11E708</string>
+	<string>11E608c</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>16E185</string>
+	<string>16C58</string>
 	<key>DTSDKName</key>
 	<string>macosx10.12</string>
 	<key>DTXcode</key>
-	<string>1160</string>
+	<string>1150</string>
 	<key>DTXcodeBuild</key>
-	<string>11E708</string>
+	<string>11E608c</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>IntelBluetoothFirmware_0026</key>

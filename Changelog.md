@@ -1,5 +1,11 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 09-17-2020
+  - ## EFI-OC061-PRO13-Intel
+      ### 更新 Intel网卡驱动：
+    - IntelBluetoothFirmware.kext ([ 1.1.2 releases 版](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/1.1.2))
+    - itlwm.kext(***AirportItlwm.kext***) ([ v1.1.0 版](https://github.com/OpenIntelWireless/itlwm/releases/tag/v1.1.0))
+
 - # 09-15-2020
   - ## EFI-OC061-PRO13-Intel
     - 更新 OC ([ 0.6.1 releases 版](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.1))

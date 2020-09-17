@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19G2021</string>
+	<string>19G73</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -31,7 +31,7 @@
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>16E185</string>
+	<string>16C58</string>
 	<key>DTSDKName</key>
 	<string>macosx10.12</string>
 	<key>DTXcode</key>
@@ -111,6 +111,6 @@
 	<key>OSBundleRequired</key>
 	<string>Network-Root</string>
 	<key>XCBUILD</key>
-	<string>832cf1a</string>
+	<string>1.1.0</string>
 </dict>
 </plist>
