@@ -1,5 +1,21 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 10-06-2020
+  - ## EFI-OC062-PRO13-1820A
+    - 更新 OpenCore([releases 0.6.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.2))
+    - 更新 [BrightnessKeys.kext](https://github.com/acidanthera/BrightnessKeys)：由 [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2) 将亮度快捷键部分分离出独立驱动BrightnessKeys.kext并由它提供方法`Notify（^^^GFX0. ***，0x86`） 和`Notify （^^^GFX0. ***，0x87）`， 传统的亮度快捷键补丁不再需要。如果新的驱动无效请参考本章内容指定2个按键映射到F14， F15，以实现快捷键调节亮度功能。
+    - `SSDT-PNLF-ACPI.aml` 改名为 `SSDT-PNLF-CFL.aml`: 更新亮度调节热补丁
+    - `ResetHwSig` 设置 `false`
+    - `SecureBootModel` 设置 `Default`
+    - 更新 `触摸板驱动`： `VoodooI2C.kext`、`VoodooI2CHID.kext`
+    - 删除 `SMCSuperIO.kext`
+    - 删除 `SSDT-CB-01_XHC.aml`、`SSDT-HPET-disable.aml`
+    - 删除 `Intel网卡驱动` 更新为 `DW1820A驱动` 以及 `pci-aspm-default`
+    - 删除 `Block`：`com.apple.driver.AppleIntelLpssI2C`、`com.apple.driver.AppleIntelLpssI2CController`
+    
+  - ## 注意
+    - 默认 `OC/config.plist` 中 `SystemProductName` 是`MacBookAir9,1`, 如果改变 `OC/config.plist` 中 `SystemProductName`，对应的也需要修改 `OC/Kexts/USBMap.kext` 的 `Root/IOKitPersonalities/XHCI-XHCI/model`，这两个地方需要一致。By 宪武
+
 - # 09-17-2020
   - ## EFI-OC061-PRO13-Intel
       ### 更新 Intel网卡驱动：
