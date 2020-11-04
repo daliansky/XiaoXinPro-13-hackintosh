@@ -1,5 +1,10 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 11-04-2020
+  - ## EFI-OC(0.6.3)-PRO13-1820A
+    - 更新 OpenCore([releases 0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3))
+    - 更新 **kexts** 为当前最新 **releases** 版本
+
 - # 10-06-2020
   - ## EFI-OC062-PRO13-1820A
     - 更新 OpenCore([releases 0.6.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.2))
