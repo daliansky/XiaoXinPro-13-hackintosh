@@ -1,5 +1,11 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 11-20-2020
+  - ## EFI-OC(0.6.3)-PRO13-1820A
+    - 更新：`SSDT-PCI0.LPCB-Wake-AOAC.aml` by 宪武
+    - 作用：简化电源按键唤醒方法  
+    - 详情：[OC-little / AOAC 唤醒方法更新](https://github.com/daliansky/OC-little/commit/5cc76943338e8014ffc6c1c40465ee13ea5a84a0)  
+
 - # 11-04-2020
   - ## EFI-OC(0.6.3)-PRO13-1820A
     - 更新 OpenCore([releases 0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3))
