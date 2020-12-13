@@ -1,5 +1,19 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 12-13-2020
+  - ## 基于 [EFI-OC(0.6.3)-PRO13-1820A](https://github.com/daliansky/XiaoXinPro-13-hackintosh/blob/master/Changelog.md#11-20-2020)
+  - ### 更新：
+    - OpenCore([releases 0.6.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3))
+    - 新增 [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
+    - 其他常用 kexts 更新最新 releases 版本
+    - 设置引导 GUI 界面
+    - 声卡ID：11
+    - 无内置网卡驱动
+    - AAPL,ig-platform-id： 0500A63E 
+    - device-id： A63E0000 
+   - ### 注意：改变机型，OC / kexts 文件夹下的 USBMap.kext / Contents/Info.plist 也要改对应的机型
+
+
 - # 11-20-2020
   - ## EFI-OC(0.6.3)-PRO13-1820A
     - 更新：`SSDT-PCI0.LPCB-Wake-AOAC.aml` by 宪武

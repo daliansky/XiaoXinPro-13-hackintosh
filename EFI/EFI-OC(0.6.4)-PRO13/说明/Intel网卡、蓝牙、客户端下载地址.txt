@@ -1,0 +1,9 @@
+
+Intel 网卡驱动下载地址
+https://github.com/OpenIntelWireless/itlwm/releases
+
+Intel 蓝牙驱动下载地址
+https://github.com/OpenIntelWireless/IntelBluetoothFirmware
+
+HeliPort客户端下载地址 (与 itlwm.kext 一起使用)
+https://github.com/OpenIntelWireless/HeliPort
