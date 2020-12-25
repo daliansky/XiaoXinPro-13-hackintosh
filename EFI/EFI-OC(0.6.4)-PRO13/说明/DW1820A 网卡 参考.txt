@@ -1,7 +1,7 @@
 DW1820A 网卡:
+DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势
+http://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html
 
-小兵博客DW网卡系列教程
-https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html
-
-驱动设置
+参考：驱动顺序
 https://github.com/daliansky/OC-little/tree/master/%E5%B8%B8%E8%A7%81%E9%A9%B1%E5%8A%A8%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F
+

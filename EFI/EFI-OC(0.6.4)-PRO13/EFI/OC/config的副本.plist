@@ -449,14 +449,14 @@
 				AgEAAA==
 				</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x1C,0x0)</key>
 			<dict>
 				<key>pci-aspm-default</key>
 				<data>
 				AgAAAA==
 				</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>pci-aspm-default</key>
 				<data>
@@ -1124,7 +1124,7 @@
 			<key>BootProtect</key>
 			<string>None</string>
 			<key>DmgLoading</key>
-			<string>Signed</string>
+			<string>Any</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
@@ -1211,6 +1211,10 @@
 				<string>CleanNvram</string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
