@@ -1,0 +1,11 @@
+1.更新 OC0.6.5
+2.更新 kexts 日常驱动
+3.无网卡驱动，白果网卡可以直接使用; Intel网卡 需要自行下载放置并在 config.plist 中设置启用
+4.三码为空，需要自行填写，默认机型为 MacBookPro15,4，修改机型必须改 USBMap.kext 下的机型
+5.默认为 -v 模式，OC 默认 GUI 设置
+6.声卡ID 默认 11
+7.设置 自定义SMBIOS(如 Windows下 不会被注入BIOS 信息，对某个软件激活有用)
+8.AAPL,ig-platform-id： 0500A63E 
+9.device-id： A63E0000 
+
+注意：改变机型，OC / kexts 文件夹下的 USBMap.kext / Contents/Info.plist 也要改对应的机型

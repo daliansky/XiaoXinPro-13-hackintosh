@@ -1,9 +1,26 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
-- # 12-13-2020
-  - ## 基于 [EFI-OC(0.6.3)-PRO13-1820A](https://github.com/daliansky/XiaoXinPro-13-hackintosh/blob/master/Changelog.md#11-20-2020)
+- # 01-06-2021
+  - ## 基于 EFI-OC062-PRO13-1820A
   - ### 更新：
-    - OpenCore([releases 0.6.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3))
+    - OpenCore([releases 0.6.5](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.5))
+    - 新增 [NVMeFix.kext](https://github.com/acidanthera/NVMeFix)
+    - 新增 [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
+    - 其他常用 kexts 更新
+    - 默认为 `-v` 模式，OC 默认 `GUI` 设置
+    - 设置 自定义SMBIOS(如 Windows下 不会被注入BIOS 信息，对某个软件激活有用)
+    - 三码为空，需要自行填写，默认机型为 MacBookPro15,4，修改机型必须改 USBMap.kext 下的机型
+    - 无网卡驱动，白果网卡可以直接使用; Intel网卡 需要自行下载放置并在 config.plist 中设置启用
+    - 声卡ID：11
+    - AAPL,ig-platform-id： `0500A63E`
+    - device-id： `A63E0000` 
+    - 删除 VoodooInput.kext
+   - ### 注意：改变机型，OC / kexts 文件夹下的 USBMap.kext / Contents/Info.plist 也要改对应的机型
+
+- # 12-13-2020
+  - ## 基于 EFI-OC062-PRO13-1820A
+  - ### 更新：
+    - OpenCore([releases 0.6.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4))
     - 新增 [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
     - 其他常用 kexts 更新最新 releases 版本
     - 设置引导 GUI 界面
@@ -11,17 +28,17 @@
     - 无内置网卡驱动
     - AAPL,ig-platform-id： 0500A63E 
     - device-id： A63E0000 
-   - ### 注意：改变机型，OC / kexts 文件夹下的 USBMap.kext / Contents/Info.plist 也要改对应的机型
+   - ### 注意：改变机型，`OC / kexts` 文件夹下的 `USBMap.kext / Contents/Info.plist` 也要改对应的机型
 
 
 - # 11-20-2020
-  - ## EFI-OC(0.6.3)-PRO13-1820A
+  - ## 基于 EFI-OC062-PRO13-1820A
     - 更新：`SSDT-PCI0.LPCB-Wake-AOAC.aml` by 宪武
     - 作用：简化电源按键唤醒方法  
     - 详情：[OC-little / AOAC 唤醒方法更新](https://github.com/daliansky/OC-little/commit/5cc76943338e8014ffc6c1c40465ee13ea5a84a0)  
 
 - # 11-04-2020
-  - ## EFI-OC(0.6.3)-PRO13-1820A
+  - ## 基于 EFI-OC062-PRO13-1820A
     - 更新 OpenCore([releases 0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3))
     - 更新 **kexts** 为当前最新 **releases** 版本
 
