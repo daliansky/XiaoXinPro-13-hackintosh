@@ -1,22 +1,31 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
-- # 02-21-2021
+- # 02-23-2021
   - ### 更新：
-    - OpenCore( [0.6.7 @8db317c 非releases官方版本，actions 编译版本](https://github.com/acidanthera/OpenCorePkg/commit/8db317ca841403d7b5464c13514a51dbf0c657ac) )
-    - 新增 `CPUFriend.kext`、`CPUFriendDataProvider.kext`
+    - OpenCore( [0.6.7 @8db317c 非releases版本，GitHub actions 编译版本](https://github.com/acidanthera/OpenCorePkg/commit/8db317ca841403d7b5464c13514a51dbf0c657ac) )
+    - 设置 `NormalizeHeaders` 为 `true`
+    - 设置 `SyncRuntimePermissions` 为 `true`
+    - 设置 `DisableIoMapper` 为 `true`
+    - 设置 `DisableRtcChecksum` 为 `true`
+    - 设置 `PowerTimeoutKernelPanic` 为 `true`
+    - 设置 `ThirdPartyDrives` 为 `true`
+    - 设置 `PollAppleHotKeys` 为 `true`
+    - 设置 `AuthRestart` 为 `true`
+    - 设置 `JumpstartHotPlug` 为 `true`
+    - 设置 `DmgLoading` 为 `Any`
+    - 设置 `SecureBootModel` 为 `Disabled`
     - 删除 [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
-    - 其他常用 kexts 更新( 非releases官方版本，来自驱动 actions 编译版本)
-    - 修改 `SSDT-BATS-PRO13.aml`: 在某些软件(如iStat Menus)上显示 `剩余时间、充满时间`
-    - 设置 `DmgLoading` 为 `Signed`
-    - 设置 `SecureBootModel` 为 `Default`
+    - 其他常用 kexts 更新( 非releases，GitHub actions 编译版本)
+    - 修改 `SSDT-BATS-PRO13.aml`: 在某些软件(如iStat Menus)上显示 [@剩余时间、充满时间](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/66)
     - 新增 `rps-control` 属性来启用 RPS 控制补丁并提升核显性能(  [@来自XiaoMi-Pro-Hackintosh](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/commit/194c96d2e1758c4fb081b8d3f42fc51a95f1645f))
-    - 修改机型为 `MacBookPro16,2` + `CPUFriend.kext`、`CPUFriendDataProvider.kext` 可获得更多变频 如[i7-10710U 可达4.7G](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/89)
+    - 修改机型为 `MacBookPro16,2` + 新增 `CPUFriend.kext`、`CPUFriendDataProvider.kext` 可获得更多变频 如 [@i7-10710U 可达4.7G](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/89)
     - 默认为 `-v` 模式
     - `无网卡驱动`
     - `三码为空`
     - 声卡ID：`11`
     - AAPL,ig-platform-id： `0500A63E`
     - device-id： `A63E0000` 
+    - 更正 USBMap.kext/Contents/Info.plist 中 `model` 改为 `MacBookPro16,2`
    - ### 注意：如修改机型，OC / kexts 文件夹下的 USBMap.kext / Contents/Info.plist 也要改对应的机型
 
 - # 01-06-2021
