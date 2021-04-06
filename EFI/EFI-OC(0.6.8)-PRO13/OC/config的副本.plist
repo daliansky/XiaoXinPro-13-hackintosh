@@ -412,12 +412,12 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+			<key>#PciRoot(0x0)/Pci(0x14,0x3)</key>
 			<dict>
 				<key>pci-aspm-default</key>
 				<data>AgAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x3)/Pci(0x0,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x14,0x3)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>pci-aspm-default</key>
 				<data>AgEAAA==</data>
@@ -1352,7 +1352,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 alcid=11</string>
+				<string>-v keepsyms=1 alcid=11 brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1469,6 +1469,21 @@
 			<key>MinVersion</key>
 			<integer>0</integer>
 		</dict>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>0</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>AudioCodec</key>
@@ -1564,8 +1579,6 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
-			<false/>
-			<key>AppleEvent</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
