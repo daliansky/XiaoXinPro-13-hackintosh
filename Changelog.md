@@ -1,5 +1,32 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 06-13-2021
+
+  - ## OC-0.7.1-无网卡驱动-20210613
+    - 编译版本：OC 为 [0.7.1 ～@76fdc2c32](https://github.com/acidanthera/OpenCorePkg/commit/76fdc2c32)
+    - 更新驱动有：
+      - Lilu.kext https://github.com/acidanthera/Lilu/commit/90625348d
+      - 其他 kexts 日常更新。
+    - 设置启动参数：`brcmfx-country=#a`
+
+    - ## 注意：
+        - 无网卡驱动；
+        - 无三码，请找到以下几个设置，替换为自己之前使用的设置，涉及以下：
+          - `DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0)/AAPL,ig-platform-id`
+          - `DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0)/device-id`
+          - `PlatformInfo/Generic/MLB`
+          - `PlatformInfo/Generic/ROM`
+          - `PlatformInfo/Generic/SystemProductName`
+          - `PlatformInfo/Generic/SystemSerialNumber`
+          - `PlatformInfo/Generic/SystemUUID`
+        - **若修改机型**，`OC / kexts` 文件夹下的 `USBMap.kext / Contents/Info.plist` 也要改对应的机型
+        - ### OC 主题设置，
+          - 主题文件路径：`OC/Resources/Image/Acidanthera/*`
+          - 主题设置：
+            - Auto: `Misc/Boot/PickerVariant/Auto`
+            - Acidanthera\GoldenGate: `Misc/Boot/PickerVariant/Acidanthera\GoldenGate`
+          - 软件设置： `OpenCore Configurator`(建议更新到最新版本) > `Misc-其他设置` > `Boot` > `PickerVariant` > `Auto`(默认值);
+
 - # 05-07-2021
   - # OC-0.7.0-无网卡驱动-20210507
     - OC 为 [0.7.0 ～@90e3cca](https://github.com/acidanthera/OpenCorePkg/commit/90e3ccadd36f2bf69f52ed6a6afab39d3972574d)
@@ -17,7 +44,7 @@
     - 尝试解决电池模式下音频无声问题 [@issues/63](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/63)
     - 设置启动参数：`brcmfx-country=#a`
     - 禁用Ax201[Pci(0x14,0x3)]的 `aspm`
-    - 三码为空 (`MacBookPro16,2`)，[该机型无法正常机型图片的说明](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/109)
+    - 三码为空 (`MacBookPro16,2`)，[无法正常显示该机型图片的说明](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/109)
     - 替换出现`花屏`注意以下两个地方：花屏ID检测来自 @[/issues/102](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/102)
       - `AAPL,ig-platform-id`： `0400A53E`
       - `device-id`： `A53E0004`
