@@ -1,5 +1,11 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 07-07-2021
+  - ## OC-0.7.1-无网卡驱动-20210707
+    - OC 为 [releases 0.7.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.1)
+    - 更新驱动有：
+      - 其他 kexts 更新。
+
 - # 06-13-2021
 
   - ## OC-0.7.1-无网卡驱动-20210613
