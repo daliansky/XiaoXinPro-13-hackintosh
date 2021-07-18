@@ -48,15 +48,15 @@
     - 需要[解锁 DVMT 、 开启CFG Lock](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/DVMT%E8%A1%A5%E4%B8%81#%E6%B5%8B%E8%AF%95%E7%89%88bios)  
 
 
-- ### ～～安装后操作～～
+- ### ~~安装后操作~~
 
-    - ～～安装好系统，先用 `安装的EFI` 进入系统～～
-    - ～～然后找到`终端`执行一下：～～
-    - ～～`sudo spctl --master-disable`～～
-    - ～～再执行`重建缓存`: ～～
-    - ～～`sudo kextcache -i /`～～
-    - ～～替换 `EFI` 或 `config.plist`～～
-    - ～～重启～～
+    - ~~安装好系统，先用 `安装的EFI` 进入系统~~
+    - ~~然后找到`终端`执行一下：~~
+    - ~~`sudo spctl --master-disable`~~
+    - ~~再执行`重建缓存`: ~~
+    - ~~`sudo kextcache -i /`~~
+    - ~~替换 `EFI` 或 `config.plist`~~
+    - ~~重启~~
 
 - ### OC 与 Clover之间切换：
    - 例如Clover 转 OC
