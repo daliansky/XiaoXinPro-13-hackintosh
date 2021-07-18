@@ -6,18 +6,21 @@
 |规格 | 详细信息|
 |:-: | :-:|
 |电脑型号|联想小新pro13 笔记本电脑|
-|操作系统|macOS Catalina 10.15.x / ~~macOS Mojave 目前触摸板驱动不支持14.x~~|
+|操作系统|macOS （Monterey / Big Sur / Catalina / Mojave(声卡异常) |
 |处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
 |硬盘| 混搭,以下有说明 |
 |显卡|Intel HD Graphics CFL CRB|（UHD620）|
 |显示器|13.3 英寸 IPS 2560x1600|
 |声卡| Realtek ALC257|
-|网卡| [原装网卡AX201](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%B0%8F%E6%96%B0pro13%E5%9C%A8macOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%8F%AF%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BD%91%E5%8D%A1) 或其他网卡如 [DW1820A](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)|
+|网卡|[原装网卡AX201] ( [Intel网卡](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/Intel%E7%BD%91%E5%8D%A1) / [BCM94360Z4](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/BCM94360Z4%E5%9B%9B%E5%A4%A9%E7%BA%BF) / [白果拆机网卡](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E7%99%BD%E6%9E%9C%E6%8B%86%E6%9C%BA%E7%BD%91%E5%8D%A1) ) |
 
-## 已知问题
-- CPU为`i7-10710U`的需要仿冒cpuid ：`0x0806EC`、`0x0806EB` 或其他），才能正常安装并驱动集显, [已仿冒CPUID的EFI](https://github.com/daliansky/XiaoXinPro-13-2019-hackintosh/releases);
-- 目前 `声卡MIC`、~~`睡眠`~~ 这些比较棘手的问题需要解决，正常使用已经没有问题。
+## 注意
+- 部分i5 和 `i7-10710U` 的 CPUID 为 `0x0A0660`，需要仿冒`cpuid` ：`0x0806EC`、`0x0806EB` 或其他），详情看[这里](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E6%9F%A5%E7%9C%8B%E6%9C%AC%E6%9C%BACPUID)
+- 需要[解锁 DVMT 、 开启CFG Lock](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/DVMT%E8%A1%A5%E4%B8%81#%E6%B5%8B%E8%AF%95%E7%89%88bios)
+- 目前 `声卡(MIC不可用)`、~~`睡眠`~~ 这些比较棘手的问题需要解决，正常使用已经没有问题。
+- 硬盘耗电问题看下[小新pro-13耗电情况.xlsx](https://github.com/daliansky/XiaoXinPro-13-hackintosh/tree/master/EFI/Document)
+- 更多关于小新pro13  的黑苹果事宜请看 [wiki](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki)
 
 ## 安装部分
 
@@ -42,16 +45,18 @@
     - 先查看 `Information`：`Secure Boot` 是否为 `Disabled`;
     - 如果 `Secure Boot` 是 `Enabled`，选择左边到 `Security`： 设置 `Secure Boot` 为 `Disabled`;
     - `Fn+F10` 保存设置
+    - 需要[解锁 DVMT 、 开启CFG Lock](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/DVMT%E8%A1%A5%E4%B8%81#%E6%B5%8B%E8%AF%95%E7%89%88bios)  
 
-- ### 安装后操作
 
-    - 安装好系统，先用 `安装的EFI` 进入系统
-    - 然后找到`终端`执行一下：
-    - `sudo spctl --master-disable`
-    - 再执行`重建缓存`: 
-    - `sudo kextcache -i /`
-    - 替换 `EFI` 或 `config.plist`
-    - 重启
+- ### ～～安装后操作～～
+
+    - ～～安装好系统，先用 `安装的EFI` 进入系统～～
+    - ～～然后找到`终端`执行一下：～～
+    - ～～`sudo spctl --master-disable`～～
+    - ～～再执行`重建缓存`: ～～
+    - ～～`sudo kextcache -i /`～～
+    - ～～替换 `EFI` 或 `config.plist`～～
+    - ～～重启～～
 
 - ### OC 与 Clover之间切换：
    - 例如Clover 转 OC
@@ -90,17 +95,17 @@
 
 - 显示器亮度调节
 
-- 无线（[原网卡AX201](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%B0%8F%E6%96%B0pro13%E5%9C%A8macOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%8F%AF%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BD%91%E5%8D%A1) 在macOS 下可以驱动了(`08-02-2020`)，当然[DW1820A ](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)使用体验上也不错)
+- 无线（[原网卡AX201](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%B0%8F%E6%96%B0pro13%E5%9C%A8macOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%8F%AF%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BD%91%E5%8D%A1) 在macOS 下可以驱动了(`08-02-2020`)
 
-- 触摸板 (`02-17-2020`) （1、`OC`关闭触摸板方法：`FN+F6`2、`目前触摸板驱动不支持14.x` ）
+- 触摸板 (`02-17-2020`) （1、`OC`关闭触摸板方法：`FN+F6`）
 
   ![TouchPad](./screenshot/TouchPad.png)
 
 - USB定制（采用 `ACPI` 方式，为使用 `OC` 做准备）
 
-- 声卡 [声卡 ID 使用说明](Changelog.md#oc--clover-%E5%85%B3%E4%BA%8E%E5%A3%B0%E5%8D%A1id-%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5)
+- 声卡 [14.x下无法加载，14.x以上系统没此问题，声卡 ID 使用说明](Changelog.md#oc--clover-%E5%85%B3%E4%BA%8E%E5%A3%B0%E5%8D%A1id-%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5)
 
-- 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/CLOVER/ACPI/patched`
+- 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/ACPI/patched`
 
 ## 不正常工作
 - ~~睡眠~~ (小新PRO13不能真正睡眠，可以仿真睡眠。唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
@@ -111,7 +116,7 @@
 <p>但因 ACPI 有了 S3才导致苹果试图进入睡眠，但因缺少必须的硬件最终失败，对于 Windows 不妨碍</p>更详细的说明移步<a href="https://github.com/daliansky/OC-little" target="_blank">OC-little</a>
 </details>
 
-## 哪些可以工作更好
+## 拓展
 - 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
 
 ## QQ群
