@@ -209,7 +209,7 @@
 		<key>StrictHibernate</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>-1</integer>
 		<key>XMPDetection</key>
 		<integer>-1</integer>
 	</dict>
@@ -314,13 +314,12 @@
 	<dict>
 		<key>CustomIcons</key>
 		<false/>
-		<key>EmbeddedThemeType</key>
-		<string>Daytime</string>
 		<key>Hide</key>
 		<array>
-			<string>Preboot</string>
-			<string>Recovery</string>
+			<string>#Preboot</string>
+			<string>#Recovery</string>
 			<string>Windows</string>
+			<string>Legacy</string>
 		</array>
 		<key>PlayAsync</key>
 		<false/>
@@ -353,10 +352,15 @@
 		<false/>
 		<key>FakeCPUID</key>
 		<string>0x0806EB</string>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\corecapture.kext</string>
+			<string>\System\Library\Extensions\IO80211Family.kext</string>
+		</array>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<false/>
+		<true/>
 		<key>KernelXCPM</key>
 		<false/>
 		<key>KextsToPatch</key>
@@ -365,7 +369,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>D4KnAwAA</data>
 				<key>InfoPlistPatch</key>
@@ -381,7 +385,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>D4KPAwAA</data>
 				<key>InfoPlistPatch</key>
@@ -395,7 +399,7 @@
 			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>Quirks</key>
 	<dict>
@@ -434,7 +438,7 @@
 		<key>KernelCache</key>
 		<string>Auto</string>
 		<key>PowerTimeoutKernelPanic</key>
-		<false/>
+		<true/>
 		<key>ProtectMemoryRegions</key>
 		<false/>
 		<key>ProtectSecureBoot</key>

@@ -1,5 +1,17 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 07-25-2021
+  - ## OC
+    - 安装文件： `config-install.plist`
+      - `DmgLoading` 设置 `Any`
+      - `SecureBootModel` 设置 `Disabled`
+
+  - ## Clover
+    - 修复无法进去 Big Sur 问题：`VoodooInput.kext` 重复导致 `panic`，移除 `VoodooI2C.kext` 或 `VoodooPS2Controller.kext` 中的 `VoodooInput.kext`，只保留一个即可
+    - 修复无法使用 `F11，F12`调节亮度问题: `SSDT-BKeyQ38Q39-LenovoPRO13.aml`
+    - 隐藏分区设置：放行 `Preboot` (`Big Sur被识别为Preboot`)，隐藏 `Legacy`
+    - 移除用不到的文件
+
 - # 07-24-2021
   - ## Clover-5138-无网卡驱动-20210724
     - [CloverV2-5138.zip](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5138)
