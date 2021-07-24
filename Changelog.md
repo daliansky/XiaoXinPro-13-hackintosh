@@ -1,5 +1,13 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 07-24-2021
+  - ## Clover-5138-无网卡驱动-20210724
+    - [CloverV2-5138.zip](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5138)
+    - ACPI(搬运 [EFI_OC](https://github.com/daliansky/XiaoXinPro-13-hackintosh/tree/master/EFI/EFI_OC/OC/ACPI))
+    - 默认 Clover 主题 [Catalina](https://github.com/CloverHackyColor/CloverThemes)
+    - 机型三码为 `15,4`
+    - 无网卡驱动
+
 - # 07-07-2021
   - ## OC-0.7.1-无网卡驱动-20210707
     - OC 为 [releases 0.7.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.1)
