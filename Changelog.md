@@ -1,5 +1,10 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 08-07-2021
+  - 正式版本：OC-0.7.2-无网卡驱动-20210807
+  - OC 为 [releases 0.7.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.2)
+    - 更新驱动有：其他 kexts 更新。
+    - 删除 `config.plist` 中几乎 `false` 的设置.
 - # 07-25-2021
   - ## OC
     - 安装文件： `config-install.plist`
