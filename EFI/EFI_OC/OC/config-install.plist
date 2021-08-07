@@ -855,7 +855,7 @@
 				<key>boot-args</key>
 				<string>-v keepsyms=1</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data></data>
 				<key>run-efi-updater</key>
@@ -959,7 +959,7 @@
 			<key>MinDate</key>
 			<integer>-1</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
@@ -1015,7 +1015,7 @@
 			<string>#HiiDatabase.efi</string>
 			<string>#NvmExpressDxe.efi</string>
 			<string>#XhciDxe.efi</string>
-			<string>#ExFatDxe.efi</string>
+			<string>ExFatDxe.efi</string>
 			<string>#CrScreenshotDxe.efi</string>
 		</array>
 		<key>Input</key>

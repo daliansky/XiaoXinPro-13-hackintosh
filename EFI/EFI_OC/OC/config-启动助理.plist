@@ -742,7 +742,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>CustomSMBIOSGuid</key>
-			<true/>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>SetApfsTrimTimeout</key>
@@ -942,7 +942,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Custom</string>
+		<string>Create</string>
 	</dict>
 	<key>UEFI</key>
 	<dict>

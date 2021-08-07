@@ -4,7 +4,13 @@
   - 正式版本：OC-0.7.2-无网卡驱动-20210807
   - OC 为 [releases 0.7.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.2)
     - 更新驱动有：其他 kexts 更新。
-    - 删除 `config.plist` 中几乎 `false` 的设置.
+    - config.plist:
+      - 删除 `config.plist` 中状态为 `false` 的设置.
+      - 开启 `ExFatDxe.efi`(启动转换助理)
+      - `SecureBootModel: Disabled`(禁用安全启动)
+      - `csr-active-config`: `E7030000`(SIP 完全关闭)
+      - `MinDate`: `-1`
+      - `MinVersion`: `-1`(虽然强烈建议不要这样做，但能解决无法某些系统分区(引导选项)).
 - # 07-25-2021
   - ## OC
     - 安装文件： `config-install.plist`
