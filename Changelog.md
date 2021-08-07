@@ -10,7 +10,7 @@
       - `SecureBootModel: Disabled`(禁用安全启动)
       - `csr-active-config`: `E7030000`(SIP 完全关闭)
       - `MinDate`: `-1`
-      - `MinVersion`: `-1`(虽然强烈建议不要这样做，但能解决无法某些系统分区(引导选项)).
+      - `MinVersion`: `-1`(虽然强烈建议不要这样做，但能解决无法识别某些系统分区(引导选项)).
 - # 07-25-2021
   - ## OC
     - 安装文件： `config-install.plist`
