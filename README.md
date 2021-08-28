@@ -3,17 +3,18 @@
 ## Lenovo XiaoXin Pro 13 2019&2020 Hackintosh
 ### 适用：`2019 & 2020款小新pro13(s) Intel版本`
 ## 电脑配置
-|规格 | 详细信息|
+|规格 | [详细信息](https://item.lenovo.com.cn/product/1007854.html) |
 |:-: | :-:|
 |电脑型号|联想小新pro13 笔记本电脑|
-|操作系统|macOS （Monterey / Big Sur / Catalina / Mojave(声卡异常) |
+|操作系统|macOS （Monterey / Big Sur / Catalina / Mojave(`声卡异常`) |
 |处理器|英特尔 酷睿 i5 - 10210U / i7-10710U|
 |内存|16GB板载无法更换|
-|硬盘| 混搭,以下有说明 |
+|硬盘|PCIEX4，[混搭](https://zhuanlan.zhihu.com/p/89874980), 以下针对安装 macOS 下说明 |
 |显卡|Intel HD Graphics CFL CRB|（UHD620）|
 |显示器|13.3 英寸 IPS 2560x1600|
 |声卡| Realtek ALC257|
 |网卡|[原装网卡AX201] ( [Intel网卡](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/Intel%E7%BD%91%E5%8D%A1) / [BCM94360Z4](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/BCM94360Z4%E5%9B%9B%E5%A4%A9%E7%BA%BF) / [白果拆机网卡](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E7%99%BD%E6%9E%9C%E6%8B%86%E6%9C%BA%E7%BD%91%E5%8D%A1) ) |
+|官方BIOS|搜【[小新pro 13 Intel](https://newsupport.lenovo.com.cn/search_result.html?q=%E5%B0%8F%E6%96%B0pro%2013%20Intel)】 选【小新 Pro-13 2019(2020)(Intel平台：IML版)】|
 
 ## 注意
 - 部分i5 和 `i7-10710U` 的 CPUID 为 `0x0A0660`，需要仿冒`cpuid` ：`0x0806EC`、`0x0806EB` 或其他），详情看[这里](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E6%9F%A5%E7%9C%8B%E6%9C%AC%E6%9C%BACPUID)
