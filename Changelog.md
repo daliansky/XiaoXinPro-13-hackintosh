@@ -7,7 +7,7 @@
     - **config.plist**:
         - 默认加载 `AirportBrcmFixup.kext`
         - 设置普通网卡的 `ASPM` ( `DeviceProperties > Add >PciRoot(0x0)/Pci(0x1C,0x0)` )
-        - 替换回旧的 `SSDT-BATS-PRO13.aml`：睡眠`唤醒仅轻按`即可
+        - 替换回旧的 `SSDT-PCI0.LPCB-Wake-AOAC.aml`：睡眠`唤醒仅轻按`即可
           - 如果`唤醒遇到问题`请使用回之前的 `SSDT` ( 已改名为 `SSDT-PCI0.LPCB-Wake-AOAC-NEW.aml`)
         - 添加 `boot-args` 参数 `forceRenderStandby=0` 详情看 [@issues/1193](https://github.com/acidanthera/bugtracker/issues/1193)
         - 移除 **一些状态为 `false` 的 `quirks`**
