@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>19H1323</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>YogaSMC</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.zhen.YogaSMC</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>YogaSMC</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.5.2</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.5.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>12D4e</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>11.1</string>
+	<key>DTSDKBuild</key>
+	<string>20C63</string>
+	<key>DTSDKName</key>
+	<string>macosx11.1</string>
+	<key>DTXcode</key>
+	<string>1240</string>
+	<key>DTXcodeBuild</key>
+	<string>12D4e</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>DYVPC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>DYVPC</string>
+			<key>IONameMatch</key>
+			<string>PNP0C14</string>
+			<key>IOProbeScore</key>
+			<integer>200</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOUserClientClass</key>
+			<string>YogaSMCUserClient</string>
+			<key>Sensors</key>
+			<dict>
+				<key>Airflow Left</key>
+				<false/>
+				<key>Airflow Right</key>
+				<false/>
+				<key>Battery</key>
+				<false/>
+				<key>Battery Sensor 1</key>
+				<false/>
+				<key>Battery Sensor 2</key>
+				<false/>
+				<key>CPU Core PECI</key>
+				<false/>
+				<key>CPU System Agent Core</key>
+				<false/>
+				<key>Memory Proximity</key>
+				<false/>
+				<key>Platform Controller Hub Die</key>
+				<false/>
+				<key>SO-DIMM 1 Proximity</key>
+				<false/>
+				<key>SO-DIMM 2 Proximity</key>
+				<false/>
+				<key>SO-DIMM 3 Proximity</key>
+				<false/>
+				<key>SO-DIMM 4 Proximity</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>IdeaVPC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>IdeaVPC</string>
+			<key>IONameMatch</key>
+			<string>VPC2004</string>
+			<key>IOProbeScore</key>
+			<integer>200</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOUserClientClass</key>
+			<string>YogaSMCUserClient</string>
+			<key>Sensors</key>
+			<dict>
+				<key>Airflow Left</key>
+				<false/>
+				<key>Airflow Right</key>
+				<false/>
+				<key>Battery</key>
+				<false/>
+				<key>Battery Sensor 1</key>
+				<string>TBAT</string>
+				<key>Battery Sensor 2</key>
+				<false/>
+				<key>CPU Core PECI</key>
+				<string>CPEC</string>
+				<key>CPU System Agent Core</key>
+				<string>CTMP</string>
+				<key>Memory Proximity</key>
+				<string>MEM1</string>
+				<key>Platform Controller Hub Die</key>
+				<string>RSEN</string>
+				<key>SO-DIMM 1 Proximity</key>
+				<string>MEM1</string>
+				<key>SO-DIMM 2 Proximity</key>
+				<string>MEM2</string>
+				<key>SO-DIMM 3 Proximity</key>
+				<false/>
+				<key>SO-DIMM 4 Proximity</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>ThinkVPC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>ThinkVPC</string>
+			<key>IOProbeScore</key>
+			<integer>200</integer>
+			<key>IOPropertyMatch</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>LEN0268</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>LEN0068</string>
+				</dict>
+			</array>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOUserClientClass</key>
+			<string>YogaSMCUserClient</string>
+			<key>Sensors</key>
+			<dict>
+				<key>Airflow Left</key>
+				<false/>
+				<key>Airflow Right</key>
+				<false/>
+				<key>Battery</key>
+				<false/>
+				<key>Battery Sensor 1</key>
+				<false/>
+				<key>Battery Sensor 2</key>
+				<false/>
+				<key>CPU Core PECI</key>
+				<false/>
+				<key>CPU System Agent Core</key>
+				<string>TMP0</string>
+				<key>Memory Proximity</key>
+				<false/>
+				<key>Platform Controller Hub Die</key>
+				<string>ESTA</string>
+				<key>SO-DIMM 1 Proximity</key>
+				<false/>
+				<key>SO-DIMM 2 Proximity</key>
+				<false/>
+				<key>SO-DIMM 3 Proximity</key>
+				<false/>
+				<key>SO-DIMM 4 Proximity</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>YogaHIDD</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>YogaHIDD</string>
+			<key>IOProbeScore</key>
+			<integer>200</integer>
+			<key>IOPropertyMatch</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>INT33D5</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>INTC1051</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>INTC1054</string>
+				</dict>
+			</array>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOUserClientClass</key>
+			<string>YogaSMCUserClient</string>
+		</dict>
+		<key>YogaVPC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>YogaVPC</string>
+			<key>IONameMatch</key>
+			<string>VPC0000</string>
+			<key>IOProbeScore</key>
+			<integer>200</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOUserClientClass</key>
+			<string>YogaSMCUserClient</string>
+		</dict>
+		<key>YogaWMI</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>YogaWMI</string>
+			<key>IONameMatch</key>
+			<string>PNP0C14</string>
+			<key>IOProbeScore</key>
+			<integer>100</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+		</dict>
+	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.9</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2020 Zhen. All rights reserved.</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>as.vit9696.Lilu</key>
+		<string>1.4.5</string>
+		<key>as.vit9696.VirtualSMC</key>
+		<string>1.1.4</string>
+		<key>com.apple.iokit.IOACPIFamily</key>
+		<string>1.0.0d1</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>8.0.0</string>
+	</dict>
+</dict>
+</plist>
