@@ -1,5 +1,13 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 10-26-2021
+  - `编译版本`：OC-0.7.5-无网卡驱动-2021-10-26
+  - OC 为 [releases 0.7.5 @589baa1645](https://github.com/acidanthera/OpenCorePkg/commit/589baa1645)
+  - 更新驱动有：
+    - 其他 `kexts` 更新。
+    - **config-YOGASMC.plist**
+      - 在 `config.plist` 基础上集成 [YogaSMC](https://github.com/zhen-zen/YogaSMC) 详情看 [@issues/139](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/139)
+
 - # 09-07-2021
   - 正式版本：[releases 0.7.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.3)-无网卡驱动-20210907
   - 更新内容：
