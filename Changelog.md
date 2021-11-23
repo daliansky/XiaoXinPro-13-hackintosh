@@ -1,5 +1,17 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+
+- # 11-23-2021
+  - `编译版本`：OC-0.7.6-无网卡驱动-2021-11-23
+  - OC 为 [releases 0.7.6 @3db6e1b](https://github.com/acidanthera/OpenCorePkg/commit/3db6e1b996f6af21c34d55eb3da99d67a745e80a) && [actions 取 releases](https://github.com/acidanthera/OpenCorePkg/actions/runs/1494187007) 
+  - 更新驱动有：
+    - 其他 `kexts` 更新。
+    - **config-YOGASMC.plist**
+      - 在 `config.plist` 基础上集成 [YogaSMC](https://github.com/zhen-zen/YogaSMC) 详情看 [@issues/139](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/139)
+    - **config-BRCM.plist**
+      - 博通( `BCM` / `DW` )网卡驱动
+      - PS：但非白果拆机网卡的蓝牙用不了，是一个很严肃的问题。
+
 - # 10-26-2021
   - `编译版本`：OC-0.7.5-无网卡驱动-2021-10-26
   - OC 为 [releases 0.7.5 @589baa1645](https://github.com/acidanthera/OpenCorePkg/commit/589baa1645)
