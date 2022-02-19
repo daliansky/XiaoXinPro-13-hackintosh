@@ -887,7 +887,7 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -941,7 +941,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1023,9 +1023,9 @@
 			<key>HideVerbose</key>
 			<true/>
 			<key>MinDate</key>
-			<integer>20200401</integer>
+			<integer>-1</integer>
 			<key>MinVersion</key>
-			<integer>1412101001000000</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>

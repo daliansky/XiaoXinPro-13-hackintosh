@@ -1,6 +1,13 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
 
+- # 02-19-2022
+  - `版本`：OC-0.7.9-无网卡驱动-2022-02-19
+    - OC 为 [releases 0.7.9](https://github.com/acidanthera/OpenCorePkg/commit/ae04256ac544b56766978c1a29ccdd13d75ce38b)
+      - 其他 `kexts` 更新;
+      - 隐藏项 `HideAuxiliary` 设置 `true`，空格键可以显示隐藏项。
+      - `SecureBootModel` 设置为 `Default`
+
 - # 12-11-2021
   - `版本`：OC-0.7.6-无网卡驱动-2021-12-11
     - OC 为 [releases 0.7.6](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6) 
