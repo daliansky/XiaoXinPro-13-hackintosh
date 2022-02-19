@@ -1,8 +1,6 @@
 .DS_Store
 Owner/
 */.DS_Store
-*/._Contents
-*/._Info.plist
-*/._MacOS
+._*
 */._*
 
