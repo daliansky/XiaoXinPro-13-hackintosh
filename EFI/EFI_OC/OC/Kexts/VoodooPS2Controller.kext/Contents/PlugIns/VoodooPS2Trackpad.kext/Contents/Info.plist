@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19H1417</string>
+	<string>20G417</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
-	<string>2.2.7, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
+	<string>2.2.8, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
 	<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.2.7</string>
+	<string>2.2.8</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,23 +25,23 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.2.7</string>
+	<string>2.2.8</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12B45b</string>
+	<string>12E507</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>11.3</string>
 	<key>DTSDKBuild</key>
-	<string>20A2408</string>
+	<string>20E214</string>
 	<key>DTSDKName</key>
-	<string>macosx11.0</string>
+	<string>macosx11.3</string>
 	<key>DTXcode</key>
-	<string>1220</string>
+	<string>1251</string>
 	<key>DTXcodeBuild</key>
-	<string>12B45b</string>
+	<string>12E507</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALPS GlidePoint</key>
@@ -51,15 +51,68 @@
 			<key>IOClass</key>
 			<string>ApplePS2ALPSGlidePoint</string>
 			<key>IOProbeScore</key>
-			<integer>1500</integer>
+			<integer>6000</integer>
 			<key>IOProviderClass</key>
 			<string>ApplePS2MouseDevice</string>
 			<key>Platform Profile</key>
 			<dict>
 				<key>Default</key>
 				<dict>
+					<key>Darwin 16+</key>
+					<dict>
+						<key>ApplePreferenceCapability</key>
+						<true/>
+						<key>ApplePreferenceIdentifier</key>
+						<string>com.apple.AppleMultitouchTrackpad</string>
+						<key>MT Built-in</key>
+						<true/>
+						<key>MTHIDDevice</key>
+						<true/>
+						<key>SupportsGestureScrolling</key>
+						<true/>
+						<key>TrackpadEmbedded</key>
+						<true/>
+						<key>TrackpadFourFingerGestures</key>
+						<true/>
+						<key>TrackpadSecondaryClickCorners</key>
+						<true/>
+						<key>TrackpadThreeFingerDrag</key>
+						<false/>
+					</dict>
 					<key>DisableDevice</key>
 					<false/>
+					<key>DragLockTempMask</key>
+					<integer>1048592</integer>
+					<key>FingerZ</key>
+					<integer>1</integer>
+					<key>ForceTouchCustomDownThreshold</key>
+					<string>90</string>
+					<key>ForceTouchCustomPower</key>
+					<string>8</string>
+					<key>ForceTouchCustomUpThreshold</key>
+					<string>20</string>
+					<key>ForceTouchMode</key>
+					<integer>0</integer>
+					<key>ForceTouchPressureThreshold</key>
+					<integer>100</integer>
+					<key>ProcessBluetoothMouseStopsTrackpad</key>
+					<true/>
+					<key>ProcessUSBMouseStopsTrackpad</key>
+					<true/>
+					<key>QuietTimeAfterTyping</key>
+					<integer>500000000</integer>
+					<key>Resolution</key>
+					<integer>400</integer>
+					<key>ScrollResolution</key>
+					<integer>400</integer>
+					<key>USBMouseStopsTrackpad</key>
+					<integer>0</integer>
+					<key>UnitsPerMMX</key>
+					<integer>50</integer>
+					<key>UnitsPerMMY</key>
+					<integer>50</integer>
+					<key>WakeDelay</key>
+					<integer>1000</integer>
 				</dict>
 				<key>HPQOEM</key>
 				<dict>
@@ -106,6 +159,12 @@
 					<string>ProBook</string>
 				</dict>
 			</dict>
+			<key>ProductID</key>
+			<integer>547</integer>
+			<key>RM,deliverNotifications</key>
+			<true/>
+			<key>VendorID</key>
+			<integer>1452</integer>
 		</dict>
 		<key>Elantech TouchPad</key>
 		<dict>
@@ -492,7 +551,7 @@
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.acidanthera.voodoo.driver.PS2Controller</key>
-		<string>2.2.7</string>
+		<string>2.2.8</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>1.0.0b1</string>
 		<key>com.apple.kpi.iokit</key>
