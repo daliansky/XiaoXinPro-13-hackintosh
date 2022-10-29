@@ -1,5 +1,9 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 10-29-2022
+  - `版本`：OC-0.8.6-无网卡驱动-2022-10-29
+    - OC 为 [编辑版本 0.8.6](https://github.com/acidanthera/OpenCorePkg/commit/f9eee61b154c8588b5ebc974f8222d0311ff8c74)
+    - `kexts` 编辑版更新
 
 - # 09-07-2022
   - `版本`：OC-0.8.4-无网卡驱动-2022-09-07
