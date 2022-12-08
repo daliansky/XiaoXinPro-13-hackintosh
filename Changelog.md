@@ -1,5 +1,15 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- # 12-08-2022
+  -  # 版本：来自 【EFI-OC088-PRO13-10210-4360.zip】 by 宪武
+    - # 使用注意⚠️
+      - config.plist 默认机型为 MacBookAir9,1
+      - OC/Kexts/USBMap.kext/Contents/Info.plist 中的 model 为 MacBookAir9,1
+      - MLB、SystemSerialNumber、SystemUUID 为空，请根据 机型填写对应的 三码等信息 再更新使用
+      - 若使用多系统：注意 Entries 中自行替换引导 Win 10 Path 地址 或 设置 BlessOverride 对应的值
+      - --
+      - 请查阅【ReadMe】文件夹内容再使用
+
 - # 10-29-2022
   - `版本`：OC-0.8.6-无网卡驱动-2022-10-29
     - OC 为 [编辑版本 0.8.6](https://github.com/acidanthera/OpenCorePkg/commit/f9eee61b154c8588b5ebc974f8222d0311ff8c74)

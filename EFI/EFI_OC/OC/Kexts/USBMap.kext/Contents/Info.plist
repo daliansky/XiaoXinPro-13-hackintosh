@@ -7,7 +7,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>v1.0</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dortania.USBmap</string>
+	<string>com.corpnewt.USBMap</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,18 +22,20 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>XHCI-XHCI</key>
+		<key>MacBookAir9,1-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
-			<key>IOPathMatch</key>
-			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBMuxEnabled</key>
+				<true/>
 				<key>port-count</key>
 				<data>
 				EAAAAA==
@@ -115,7 +117,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro15,4</string>
+			<string>MacBookAir9,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>

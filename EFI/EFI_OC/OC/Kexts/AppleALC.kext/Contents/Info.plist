@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20G817</string>
+	<string>21G217</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.7.6</string>
+	<string>1.7.8</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,23 +25,23 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.7.6</string>
+	<string>1.7.8</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>13C100</string>
+	<string>14A400</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>12.1</string>
+	<string>12.3</string>
 	<key>DTSDKBuild</key>
-	<string>21C46</string>
+	<string>21E226</string>
 	<key>DTSDKName</key>
-	<string>macosx12.1</string>
+	<string>macosx12.3</string>
 	<key>DTXcode</key>
-	<string>1321</string>
+	<string>1401</string>
 	<key>DTXcodeBuild</key>
-	<string>13C100</string>
+	<string>14A400</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALCUserClientProvider</key>
@@ -2598,6 +2598,32 @@
 					<key>WakeConfigData</key>
 					<data>
 					AbcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC255 for Acer Aspire A515-54G</string>
+					<key>CodecID</key>
+					<integer>283902549</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6mAScfkAFHHCABRx0RAUce
+					FwFHH5AB1xwxAdcdAAHXHoAB1x8AAhccQAIX
+					HRACFx4hAhcfAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>23</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -8138,6 +8164,32 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
+					<string>RockJesus.cn - Realtek ALC298 for surface laptop 1gen</string>
+					<key>CodecID</key>
+					<integer>283902616</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccQAEnHQEBJx6mAScfkAGHHDABhx0QAYce
+					oQGHHwMBpxwQAacdAQGnHhcBpx+QAhccIAIX
+					HRACFx4hAhcfAw==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>33</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AXcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
 					<string>Daliansky - Realtek ALC298 ThinkPad T470p</string>
 					<key>CodecID</key>
 					<integer>283902616</integer>
@@ -10715,6 +10767,31 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAgG3DAIBlwwC
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>OPS Computer ALC897 by Andres ZeroCross</string>
+					<key>CodecID</key>
+					<integer>283904151</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHUABRx4hAUcfAgGHHCABhx2QAYce
+					oAGHHwI=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>21</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgG3DAI=
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -14792,6 +14869,32 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAgIXDAIBlwcl
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Littlesum - Realtek ALC256 (3246)  for Intel NUC9 </string>
+					<key>CodecID</key>
+					<integer>283902550</integer>
+					<key>ConfigData</key>
+					<data>
+					AhccEAIXHRACFx4hAhcfAgIXDAIB5xwgAecd
+					EQHnHkUB5x8BAZccMAGXHRABlx6gAZcfkgG3
+					HEABtx0QAbceEQG3HwEBtwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>68</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AhcMAgG3DAI=
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
