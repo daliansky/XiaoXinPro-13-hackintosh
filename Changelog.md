@@ -1,6 +1,9 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
 - # 12-08-2022
+  -  完善一下ReadMe
+
+- # 12-08-2022
   -  # 版本：来自 【EFI-OC088-PRO13-10210-4360.zip】 by 宪武
     - # 使用注意⚠️
       - config.plist 默认机型为 MacBookAir9,1
