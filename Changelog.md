@@ -1,5 +1,20 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+
+- # 02-26-2022
+  -  # 版本：来自 【EFI-OC090-PRO13-10210-Intel网卡.zip】 by 宪武
+    - # 使用注意⚠️
+      - `config.plist` 默认机型为 `MacBookPro16,2`
+      - `OC/Kexts/USBMap.kext/Contents/Info.plist` 中的 `model` 为 `MacBookPro16,2`
+      - `MLB`、`SystemSerialNumber`、`SystemUUID` 为空，请根据 机型填写对应的 三码等信息 再更新使用
+      - 若使用多系统：注意 `Entries` 中自行替换引导 `Win 10 Path` 地址 或 设置 `BlessOverride` 对应的值
+      - 移除可能不需要的：`SSDT-NameS3-disable.aml`、`SSDT-GPRW.aml` 以及对应的重命名
+      - 添加 `MMIO（Memory-mapped I/O）` 更多看 `EFI—OC/ReadMe`
+      - 默认Intel网卡(`AX201`)驱动
+      - 声卡ID 100（`alcid=100`）
+      - --
+      - 请查阅【`ReadMe`】文件夹内容再使用
+
 - # 12-13-2022
   -  完善一下ReadMe
 
