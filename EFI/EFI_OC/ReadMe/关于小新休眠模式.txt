@@ -1,0 +1,9 @@
+1 BIOS设置
+  Configuration -> Alwaya On USB = Enable
+  Configuration -> Charge in Battery Mode = Enable
+2 机器在休眠状态下尽可能拔掉USB外部设备。
+3 在交流电供电条件下，如果希望鼠标来唤醒电脑，请将config文件中的以下部分（6D补丁）删除：
+  (1) ACPI\Add\的SSDT-GPRW.aml部分。
+  (2) ACPI\Patch\的的GPRW to XPRW部分。
+  (3) EFI\OC\ACPI\SSDT-GPRW.aml文件。
+4 注意：删除6D补丁后，在电池供电条件下有可能导致休眠失败。
