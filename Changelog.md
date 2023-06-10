@@ -1,5 +1,12 @@
 ## XiaoXinPro-13-hackintosh EFI Changelog
 
+- 2023-06-10
+  - 1 `boot-args` 添加 `-lilubeta debug=0x100 -v`（重置 `NVRAM` 生效）。
+  - 2 修复电池 在 Windows 下无法识别
+  - 3 `OC、kexts` 编辑版更新
+  - 4 内置 `BCM 网卡驱动`，可能无法正常使用 ？！
+  - 可能支持 macOS 14 Sonoma
+
 - # 04-11-2023
   - # 此次更新基于 群里 宪武(2023-03-07、2023-03-14、2023-04-11)
 
