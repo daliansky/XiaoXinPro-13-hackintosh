@@ -105,12 +105,13 @@
 - USB定制（采用 `ACPI` 方式，为使用 `OC` 做准备）
 
 - 声卡 [14.x下无法加载，14.x以上系统没此问题，声卡 ID 使用说明](Changelog.md#oc--clover-%E5%85%B3%E4%BA%8E%E5%A3%B0%E5%8D%A1id-%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5)
+  -  MIC (`2026-10`) ([https://github.com/pokipoi/LatSOF-Audio](https://github.com/pokipoi/LatSOF-Audio)、[https://github.com/pokipoi/Xiaoxin13-Hackintosh-EFI](https://github.com/pokipoi/Xiaoxin13-Hackintosh-EFI))
 
 - 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/ACPI/patched`
 
 ## 不正常工作
 - ~~睡眠~~ (小新PRO13不能真正睡眠，可以仿真睡眠。唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
-- 声卡MIC(`暂时解决方法`：启动台-声音-输入：手动切换到“`外接可用麦克风设备`”), 了解[更多](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%A3%B0%E5%8D%A1)
+- ~~声卡MIC(`暂时解决方法`：启动台-声音-输入：手动切换到“`外接可用麦克风设备`”), 了解[更多](https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/%E5%A3%B0%E5%8D%A1)~~
 <details>
 <summary>关于 小新PRO13(2019/2020/13S Intel版本) 没有S3睡眠延展</summary>
 <p>D0 就是正常工作状态，S0 是 D0 的电源管理，S0睡眠应该是不存在的，说 S0 睡眠，本质就是 D0 状态下进入了空闲，所以有了空闲状态下的电源管理，这个机器没有 S3睡眠，没有设计相关硬件</p>
